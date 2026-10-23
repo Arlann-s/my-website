@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>Arlann — Writer, Educator &amp; Engineer</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/tailwind.config.js"></script>
+</head>
+
+<body
+  class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/85 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]">
+    <div class="h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-4 flex-shrink-0">
+        <a class="flex items-center gap-3 group" data-path="home" href="../index.html">
+          <img alt="Arlann Wordmark Logo" class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1U-i7A7a6eJgRUYHOJOp0oRoG5JVMh6CSv5T09Kqraee0XbqT5H8BOp0AATUp4b9rpBSNaVkTQwNLddrpceJ7vB_KRyKX9EfeIEvwMIIR7XQfs9SPaqS6noJ9KA1IV7V1y76QjeeLaxCn1B0NMJjV586n8gt0V4fasPJ_Xu-KltqZ3x61958xtfofecuCLfhNDRFm-NQLJxzaiT6Y0B0BPTH6e0VBAh4bzhW0joVSZIYh2RLRexNSmmuYZz" />
+          <span
+            class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">Arlann</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low"
+        data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm">
+        <a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="home" href="../index.html">Home</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="about-portfolio" href="about.html">About & Portfolio</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="blog-hub" href="blog.html">Blog & Hub</a><a aria-current="page"
+          class="px-4 py-1.5 rounded-full transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm"
+          data-path="curated-shop" href="shop.html">Curated Shop</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="english-studio" href="english-studio.html">English Studio</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="weather" href="weather.html">Weather</a>
+      </nav>
+
+      <!-- Header Actions (Contact, Profile, Mobile Hamburger) -->
+      <div class="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+        <a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all"
+          data-path="contact" href="about.html#contact">
+          <span>Contact / สื่อสาร</span>
+        </a>
+        <div class="relative flex items-center">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_1px_rgba(56,189,248,0.35)]"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdJ8ufqBa8tN-uPQJgjVwiu79-10bUBrR-TOYExQlWwGFRsd3KsoU17HopRCafzsMkxqNJOYJBbGo9fqyv2BOb00pQn1T-DZwmy__HGqQ-3LWVf3FHCQvlZHF6b45bVBeEH7mbf5E8vzcOo-X70rFo3Kf2YiC9ifgKPwU934cYu1ZY-6wHP7HogwgyFNt9TS__YrkshAizxz6MiHX40FhMOLr_fuijVaHAiwE_x6-cE2MAwe3ojisF5A" />
+        </div>
+        <button id="mobile-menu-btn"
+          class="md:hidden p-2 rounded-xl text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center focus:outline-none"
+          aria-label="เปิดเมนูนำทาง" aria-expanded="false">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Professional Mobile Navigation Drawer -->
+    <div id="mobile-drawer"
+      class="md:hidden fixed inset-x-0 top-16 bg-surface-container-lowest/95 backdrop-blur-2xl border-b border-surface-container-high shadow-2xl transition-all duration-300 transform -translate-y-full opacity-0 pointer-events-none max-h-[calc(100vh-4rem)] overflow-y-auto">
+      <div class="p-5 flex flex-col gap-3">
+        <div class="flex items-center justify-between pb-2 border-b border-surface-container-high/60">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Navigation</span>
+          </div>
+          <span class="font-label-sm text-label-sm text-outline">A Literary &amp; Systems Sanctuary</span>
+        </div>
+        <nav class="flex flex-col gap-1.5 pt-1">
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="home" href="../index.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">home</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Home</span>
+              <span class="text-xs text-on-surface-variant font-normal">หน้าแรก • Sanctuary & Dispatch</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="about-portfolio" href="about.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">person</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">About & Portfolio</span>
+              <span class="text-xs text-on-surface-variant font-normal">ตัวตน ผลงานวิศวกรรม & ปรัชญา</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="blog-hub" href="blog.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">article</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Blog & Hub</span>
+              <span class="text-xs text-on-surface-variant font-normal">ความเรียง บทความ & คลังปัญญา</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold shadow-sm"
+            data-path="curated-shop" href="shop.html" aria-current="page">
+            <span class="material-symbols-outlined text-[20px] text-primary">storefront</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Curated Shop</span>
+              <span class="text-xs text-on-surface-variant font-normal">ป้ายยาของใช้จริง Desk Setup & EDC</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="english-studio" href="english-studio.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">translate</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">English Studio</span>
+              <span class="text-xs text-on-surface-variant font-normal">12 Tenses, Scenarios & Flashcards</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="weather" href="weather.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">cloud</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Weather Intelligence</span>
+              <span class="text-xs text-on-surface-variant font-normal">Radar, models &amp; rain trend</span>
+            </div>
+          </a>
+        </nav>
+        <div class="pt-3 border-t border-surface-container-high/60 flex flex-col gap-2">
+          <a class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-on-surface transition-all shadow-sm"
+            data-path="contact" href="about.html#contact">
+            <span class="material-symbols-outlined text-[18px]">mail</span>
+            <span>Contact / สื่อสารโดยตรง</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)] page-fade-wrapper">
+    <div class="flex flex-col w-full">
+      <div
+        class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-high/60 via-surface to-surface pb-16 pt-10">
+        <div class="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none">
+        </div>
+        <div
+          class="absolute -left-20 top-1/2 h-80 w-80 rounded-full bg-secondary-container/40 blur-3xl pointer-events-none">
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-10">
+            <div class="max-w-3xl flex flex-col gap-3">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm tracking-wider uppercase w-fit shadow-sm">
+                <span class="material-symbols-outlined text-[16px]">verified</span>
+                <span>Honest Curation &amp; Field Tests</span>
+              </div>
+              <h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+                Arlann’s Picks — <span
+                  class="italic font-headline-lg font-light text-primary">พื้นที่ป้ายยาของใช้คุณภาพ</span>
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                วัตถุและเครื่องมือที่ผ่านการทดสอบในการทำงานจริง ทั้งงานเขียน การค้นคว้าทางภาษา และการพัฒนาซอฟต์แวร์
+                คัดสรรเพื่อฟังก์ชัน ความทนทาน และสุนทรียศาสตร์
+              </p>
+            </div>
+            <div
+              class="flex items-center gap-6 p-4 rounded-xl bg-surface-container-lowest/80 backdrop-blur-md shadow-sm self-start lg:self-end">
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-primary">100%</span>
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">ใช้งานจริง</span>
+              </div>
+              <div class="h-8 w-px bg-outline-variant/50"></div>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-on-surface">6+ ปี</span>
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">ความต่อเนื่อง</span>
+              </div>
+              <div class="h-8 w-px bg-outline-variant/50"></div>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-on-surface">0 Spams</span>
+                <span
+                  class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">ไม่รับจ้างรีวิว</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-md">
+            <div class="absolute left-0 top-0 bottom-0 w-2 bg-primary"></div>
+            <div class="p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div class="flex items-start gap-4">
+                <div class="p-3 rounded-xl bg-primary-fixed text-on-primary-fixed flex-shrink-0">
+                  <span class="material-symbols-outlined text-2xl">format_image_left</span>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <span class="font-label-md text-label-md text-primary uppercase tracking-wider font-semibold">Trust
+                    &amp; Transparency Statement</span>
+                  <p class="font-headline-sm text-headline-sm text-on-surface font-normal">
+                    “สิ่งของทุกชิ้นในนี้คือสิ่งที่ผมใช้งานจริงในชีวิตประจำวัน คัดสรรเพื่อฟังก์ชัน ความทนทาน
+                    และสุนทรียศาสตร์ในการทำงาน”
+                  </p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    การเลือกสิ่งของสะท้อนวิธีคิด — ทุกไอเทมได้รับการวิเคราะห์ผ่านการทดลองใช้ระยะยาว
+                    ไม่มีการโปรโมทสินค้าที่ไม่ได้ผ่านการทดสอบส่วนตัว
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 flex-shrink-0 self-end md:self-center">
+                <div class="text-right hidden sm:block">
+                  <span class="block font-label-md text-label-md text-on-surface font-semibold">Arlann P.</span>
+                  <span class="block font-label-sm text-label-sm text-on-surface-variant">Curator &amp; Writer</span>
+                </div>
+                <img alt="Arlann profile avatar"
+                  class="w-11 h-11 rounded-full object-cover shadow-sm ring-2 ring-primary-container"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdJ8ufqBa8tN-uPQJgjVwiu79-10bUBrR-TOYExQlWwGFRsd3KsoU17HopRCafzsMkxqNJOYJBbGo9fqyv2BOb00pQn1T-DZwmy__HGqQ-3LWVf3FHCQvlZHF6b45bVBeEH7mbf5E8vzcOo-X70rFo3Kf2YiC9ifgKPwU934cYu1ZY-6wHP7HogwgyFNt9TS__YrkshAizxz6MiHX40FhMOLr_fuijVaHAiwE_x6-cE2MAwe3ojisF5A" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full pb-20">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-10">
+          <div class="flex items-center gap-2 overflow-x-auto py-2 no-scrollbar touch-scroll" id="filter-container">
+            <button
+              class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-inverse-surface text-inverse-on-surface shadow-sm transition-all whitespace-nowrap flex-shrink-0"
+              data-filter="all" type="button">
+              All Picks (6)
+            </button>
+            <button
+              class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap flex-shrink-0"
+              data-filter="desk" type="button">
+              Desk Setup (3)
+            </button>
+            <button
+              class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap flex-shrink-0"
+              data-filter="edc" type="button">
+              Everyday Carry (EDC) (1)
+            </button>
+            <button
+              class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap flex-shrink-0"
+              data-filter="tech" type="button">
+              Tech Gadgets (1)
+            </button>
+            <button
+              class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all whitespace-nowrap flex-shrink-0"
+              data-filter="books" type="button">
+              Books &amp; Learning (1)
+            </button>
+          </div>
+          <div
+            class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm self-end md:self-center">
+            <span class="material-symbols-outlined text-base">tune</span>
+            <span>จัดเรียงตาม: ลำดับความประทับใจส่วนตัว</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="product-grid">
+          <!-- Card 1 -->
+          <article
+            class="product-card group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            data-category="desk">
+            <div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A clean top-down view of Keychron Q1 Pro custom wireless mechanical keyboard with navy aluminum chassis, spherical keycaps, on a minimalist walnut desk with soft ambient light and morning coffee"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlm_j9lXUEnBbLJEvegOB4pKN5G45oM-VEuiG49SHJ13A9rlSNq2-9cLmQxj1EVEHyq_AYENzoSS7orDY2RjeuZAZh0VuREccAp8NtOMLvSBFIdcvy9cfx_GnN36wPPGbEC91CWt-jtAhKLsSFsCye3uFQQBk-JXrDrrm4GrfSeRw0SS_d0CLXBBCcOkJLwnvS0Wt1Wg6Y8dyulXzUUGUoAVzFAar1VeyAdqjWPS41K_U6x1G5zbcg6g" />
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm">
+                  Daily Driver
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm">
+                  Desk Setup
+                </span>
+              </div>
+              <div
+                class="absolute bottom-4 right-4 px-3 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-md text-label-md">
+                ~฿6,890
+              </div>
+            </div>
+            <div class="p-6 md:p-7 flex flex-col flex-1 justify-between gap-6">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+                  <span>Mechanical Switches / Bluetooth 5.1</span>
+                  <span class="flex items-center gap-1 text-primary">
+                    <span class="material-symbols-outlined text-sm"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Keychron Q1 Pro Wireless Custom Mechanical Keyboard
+                </h3>
+                <div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-1.5">
+                  <span
+                    class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">format_quote</span> Arlann’s Take
+                  </span>
+                  <p class="font-body-md text-body-md text-on-surface-variant italic">
+                    “สัมผัสการพิมพ์นุ่มแน่น เสียง thock สบายหู สลับใช้ระหว่าง Mac และ Windows ลื่นไหลมาก”
+                  </p>
+                </div>
+              </div>
+              <div class="pt-2 flex flex-col gap-2">
+                <a class="w-full py-3 px-4 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md text-center hover:bg-primary transition-colors flex items-center justify-center gap-2 shadow-sm"
+                  href="https://keychron.com" rel="noreferrer" target="_blank">
+                  <span>ดูพิกัดสินค้า / สั่งซื้อ</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+                <span
+                  class="text-center font-label-sm text-label-sm text-on-surface-variant/80">เช็คราคาและสต็อกล่าสุดจากร้านตัวแทน</span>
+              </div>
+            </div>
+          </article>
+          <!-- Card 2 -->
+          <article
+            class="product-card group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            data-category="desk">
+            <div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A sleek BenQ ScreenBar Halo mounted on a curved computer monitor in an elegant home library at twilight, glowing glare-free illumination over a notebook, warm muted tones"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEIsF4-4IoEXzgRxsfiNUAjC58BhK4MS6T2k8von7e7uwtc0P2GVxeZhXylEyR-Zr8JKhexJq5xOzC4qT1SQ1ocVHN9SruYgMd5lT49oMacD3H3bMVr1xGVjL1Htr0kQ8qsAGu7n8VWyB4c3j2pQo9xGBRqmQ8cmc2krFtg6pJyXUiXCxnFCVL4JsGA7fgkmb8uly91pDaSFYviFnULOdik8p7TJzGk_5kOp6aO1Jamrk5yzzvsNfEDQ" />
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm">
+                  Must-have
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm">
+                  Desk Setup
+                </span>
+              </div>
+              <div
+                class="absolute bottom-4 right-4 px-3 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-md text-label-md">
+                ~฿5,990
+              </div>
+            </div>
+            <div class="p-6 md:p-7 flex flex-col flex-1 justify-between gap-6">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+                  <span>Wireless Controller / Backlight</span>
+                  <span class="flex items-center gap-1 text-primary">
+                    <span class="material-symbols-outlined text-sm"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.95
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  BenQ ScreenBar Halo Monitor Light
+                </h3>
+                <div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-1.5">
+                  <span
+                    class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">format_quote</span> Arlann’s Take
+                  </span>
+                  <p class="font-body-md text-body-md text-on-surface-variant italic">
+                    “ตัดแสงสะท้อนหน้าจอได้ 100% สบายตามากตอนทำงานดึก รีโมทไร้สายปรับอุณหภูมิสีได้ละเอียด”
+                  </p>
+                </div>
+              </div>
+              <div class="pt-2 flex flex-col gap-2">
+                <a class="w-full py-3 px-4 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md text-center hover:bg-primary transition-colors flex items-center justify-center gap-2 shadow-sm"
+                  href="https://benq.com" rel="noreferrer" target="_blank">
+                  <span>ดูพิกัดสินค้า / สั่งซื้อ</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+                <span
+                  class="text-center font-label-sm text-label-sm text-on-surface-variant/80">โคมไฟถนอมสายตาคู่ใจสำหรับการอ่าน</span>
+              </div>
+            </div>
+          </article>
+          <!-- Card 3 -->
+          <article
+            class="product-card group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            data-category="edc">
+            <div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Bellroy Classic Backpack Plus 24L in midnight slate fabric standing against a concrete studio pillar, paired with a metal thermos and journal, elegant architectural setting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ChVrnBaJwBQ4G_LrRd9YOVzCuelZlRae4HwZhr-YC1688aa8E8Gl2D7P14xnm1TnQji3K2YTEhzW_lPFvlCaZlzssFRxPADxiSpPLyzg23SWUsspC2wdtzncahDwUByvs5y-lVnYkHfYrTZj2slIoCnurj3_yTO9SdfuuwTqZVYeZ7qJ5wWbW9-RzHQkZ9RdX09CURb_9iLncn0Gxtn1KVFEz_XxEyh52qOrKiCF2AWdM94uiFmKvQ" />
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm">
+                  Staff Pick
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm">
+                  Everyday Carry (EDC)
+                </span>
+              </div>
+              <div
+                class="absolute bottom-4 right-4 px-3 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-md text-label-md">
+                ~฿6,200
+              </div>
+            </div>
+            <div class="p-6 md:p-7 flex flex-col flex-1 justify-between gap-6">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+                  <span>24L Capacity / Recycled Fabric</span>
+                  <span class="flex items-center gap-1 text-primary">
+                    <span class="material-symbols-outlined text-sm"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.85
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Bellroy Classic Backpack Plus 24L
+                </h3>
+                <div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-1.5">
+                  <span
+                    class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">format_quote</span> Arlann’s Take
+                  </span>
+                  <p class="font-body-md text-body-md text-on-surface-variant italic">
+                    “ผ้ากันน้ำ ช่องใส่ Laptop กันกระแทกดีเยี่ยม และทรงกระเป๋าไม่อ้วนเทอะทะ”
+                  </p>
+                </div>
+              </div>
+              <div class="pt-2 flex flex-col gap-2">
+                <a class="w-full py-3 px-4 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md text-center hover:bg-primary transition-colors flex items-center justify-center gap-2 shadow-sm"
+                  href="https://bellroy.com" rel="noreferrer" target="_blank">
+                  <span>ดูพิกัดสินค้า / สั่งซื้อ</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+                <span class="text-center font-label-sm text-label-sm text-on-surface-variant/80">จัดกระเป๋าง่าย
+                  น้ำหนักกระจายตัวสบาย</span>
+              </div>
+            </div>
+          </article>
+          <!-- Card 4 -->
+          <article
+            class="product-card group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            data-category="books">
+            <div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="A Kindle Paperwhite 11th Gen resting on a linen blanket next to an open paper notebook and fountain pen, crisp e-ink typography visible, warm lighting, quiet reading sanctuary"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMls12pRTxhWYX2rwWt6G5gFHnZI4r5TBGnnjeBHjv-iiz2c1zg4xyEJRRUkIaYJuHkrNkaUMHVvErz9SwKwLX1Y_N92x9JjvJFBt4J0iGBjuaXEQyQOE7WDot9gcpPSGXGmgRSxzbJdAPNz7JQ21LwywLRGpbpxw-RTRYUh0IARvwrJ-nbBfk8cf-8qgdlTJ1PtuL8WXbWuTDru9Dx7KXef0sIOGOl5i1GbSEOBYmjqsM_7be5mOqng" />
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm">
+                  Must-have
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm">
+                  Books &amp; Learning
+                </span>
+              </div>
+              <div
+                class="absolute bottom-4 right-4 px-3 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-md text-label-md">
+                ~฿5,490
+              </div>
+            </div>
+            <div class="p-6 md:p-7 flex flex-col flex-1 justify-between gap-6">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+                  <span>6.8″ Display / 300 ppi / USB-C</span>
+                  <span class="flex items-center gap-1 text-primary">
+                    <span class="material-symbols-outlined text-sm"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 5.0
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Kindle Paperwhite 11th Gen
+                </h3>
+                <div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-1.5">
+                  <span
+                    class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">format_quote</span> Arlann’s Take
+                  </span>
+                  <p class="font-body-md text-body-md text-on-surface-variant italic">
+                    “หน้าจอ 300 ppi แสงไฟอุ่นอ่านสบาย แบตเตอรี่อยู่ได้เป็นเดือน ไม่ถูกรบกวนจากการแจ้งเตือน”
+                  </p>
+                </div>
+              </div>
+              <div class="pt-2 flex flex-col gap-2">
+                <a class="w-full py-3 px-4 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md text-center hover:bg-primary transition-colors flex items-center justify-center gap-2 shadow-sm"
+                  href="https://amazon.com" rel="noreferrer" target="_blank">
+                  <span>ดูพิกัดสินค้า / สั่งซื้อ</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+                <span
+                  class="text-center font-label-sm text-label-sm text-on-surface-variant/80">อุปกรณ์ชิ้นสำคัญที่สุดสำหรับคลังความรู้</span>
+              </div>
+            </div>
+          </article>
+          <!-- Card 5 -->
+          <article
+            class="product-card group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            data-category="tech">
+            <div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Sony WH-1000XM5 wireless noise cancelling headphones in silver resting gracefully on an oak table next to a journal and espresso cup, soft directional daylight"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEFisWhGO0KrwtOoQBYV5deHm1BSk_aewzLK3JeN13gRyyMOe0MSlPttnNFf-a2XjpOCnFZSIFlSzPPhYKnU1GdSTKk7VXYi8Uk9_vcXa-j6j-DvVmmAqfhvSnPo9wWWU7CMyDikDEbVocI3yujrChz5MU7O6p0gSiFfjQHdq1a2n8t7nCeLipe7UMoPL6WPEEmMB_bKMJV-0FoqK4TfiSmPA5dH7k32Wvf9hinObhVQCX70xmr7XacA" />
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm">
+                  Daily Driver
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm">
+                  Tech Gadgets
+                </span>
+              </div>
+              <div
+                class="absolute bottom-4 right-4 px-3 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-md text-label-md">
+                ~฿13,990
+              </div>
+            </div>
+            <div class="p-6 md:p-7 flex flex-col flex-1 justify-between gap-6">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+                  <span>Industry Leading ANC / 30h Battery</span>
+                  <span class="flex items-center gap-1 text-primary">
+                    <span class="material-symbols-outlined text-sm"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Sony WH-1000XM5 Noise Canceling Headphones
+                </h3>
+                <div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-1.5">
+                  <span
+                    class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">format_quote</span> Arlann’s Take
+                  </span>
+                  <p class="font-body-md text-body-md text-on-surface-variant italic">
+                    “ระบบตัดเสียงรบกวนเงียบสงัด เหมาะมากเวลาต้องการ Deep Work ในคาเฟ่”
+                  </p>
+                </div>
+              </div>
+              <div class="pt-2 flex flex-col gap-2">
+                <a class="w-full py-3 px-4 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md text-center hover:bg-primary transition-colors flex items-center justify-center gap-2 shadow-sm"
+                  href="https://sony.co.th" rel="noreferrer" target="_blank">
+                  <span>ดูพิกัดสินค้า / สั่งซื้อ</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+                <span class="text-center font-label-sm text-label-sm text-on-surface-variant/80">ตัดเสียงบรรยากาศ
+                  สร้างเกาะแห่งสมาธิ</span>
+              </div>
+            </div>
+          </article>
+          <!-- Card 6 -->
+          <article
+            class="product-card group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
+            data-category="desk">
+            <div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Roost Laptop Stand V3 holding an ultra-thin laptop at eye level in an airy modern studio workspace with plants and notebooks, clean Scandinavian aesthetics"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAswJWYjeh1NlVVGGvmJO3g3fbS-_l2uzej21_jmINVEDW7dJOPU6KntveKsDxd28JE8U3nAPLXIwS9mc4zh_LIOgOgtK9psiYTwCvnQ06kzehf-q2wGL6BbyoMlbex9JjBxB7EDIK9WqUkrWnY3zDbTi6gnH_TZFcp7XEex5_RBP0jeRvgePcEFwk1Lkp7dzpF5DthygySLmCCGevC1vdzimAzdJ5n-MtbO-PwEZHgjnSJrj4jQ_cz2w" />
+              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-sm">
+                  คุ้มค่าน่าลอง
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm">
+                  Desk Setup
+                </span>
+              </div>
+              <div
+                class="absolute bottom-4 right-4 px-3 py-1 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-md text-label-md">
+                ~฿2,450
+              </div>
+            </div>
+            <div class="p-6 md:p-7 flex flex-col flex-1 justify-between gap-6">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+                  <span>Ultra-portable / 3-Level Height</span>
+                  <span class="flex items-center gap-1 text-primary">
+                    <span class="material-symbols-outlined text-sm"
+                      style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+                  </span>
+                </div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Roost Laptop Stand V3
+                </h3>
+                <div class="rounded-xl bg-surface-container-low p-4 flex flex-col gap-1.5">
+                  <span
+                    class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">format_quote</span> Arlann’s Take
+                  </span>
+                  <p class="font-body-md text-body-md text-on-surface-variant italic">
+                    “พับเก็บได้เล็กมาก พกพาสะดวก ช่วยจัดระเบียบสรีระคอและหลังได้ทันที”
+                  </p>
+                </div>
+              </div>
+              <div class="pt-2 flex flex-col gap-2">
+                <a class="w-full py-3 px-4 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md text-center hover:bg-primary transition-colors flex items-center justify-center gap-2 shadow-sm"
+                  href="https://therooststand.com" rel="noreferrer" target="_blank">
+                  <span>ดูพิกัดสินค้า / สั่งซื้อ</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+                <span class="text-center font-label-sm text-label-sm text-on-surface-variant/80">กางง่ายใน 2 วินาที
+                  สรีรศาสตร์ที่ดีทุกที่</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Curation Philosophy & Comparison Visualizer -->
+        <div class="mt-20 p-8 lg:p-12 rounded-3xl bg-surface-container-low shadow-sm">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 flex flex-col gap-4">
+              <span class="font-label-md text-label-md text-primary uppercase tracking-wider font-semibold">How I Select
+                &amp; Filter Equipment</span>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                เกณฑ์ 3 ประการในการ ‘ยอมจ่าย’ ของ Arlann
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                เราอยู่ในยุคที่เครื่องมือดิจิทัลและของใช้ถูกโฆษณาเกินจริง ผมยึดกรอบความคิดแบบ Minimalist Functionalist:
+                อะไรก็ตามที่เข้ามาอยู่ในกระเป๋าหรือบนโต๊ะ ต้องผ่าน 3 คำถามสำคัญ
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+                  <span class="material-symbols-outlined text-primary">energy_savings_leaf</span>
+                  <span class="font-title-md text-title-md text-on-surface">Ergonomics</span>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">ลดอาการล้า รักษาสมาธิให้ยาวนานขึ้น</p>
+                </div>
+                <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+                  <span class="material-symbols-outlined text-primary">build</span>
+                  <span class="font-title-md text-title-md text-on-surface">Durability</span>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">ใช้วัสดุเกรดอุตสาหกรรม ซ่อมบำรุงได้</p>
+                </div>
+                <div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+                  <span class="material-symbols-outlined text-primary">palette</span>
+                  <span class="font-title-md text-title-md text-on-surface">Aesthetics</span>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">เรียบง่าย สบายตา ไม่ดึงสมาธิ</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-5 p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-5">
+              <div class="flex items-center justify-between">
+                <span class="font-title-md text-title-md text-on-surface font-semibold">Workstation Longevity
+                  Index</span>
+                <span
+                  class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed">Active
+                  Metrics</span>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div>
+                  <div class="flex justify-between font-label-md text-label-md pb-1 text-on-surface">
+                    <span>Mechanical Keyboard (Tactile Comfort)</span>
+                    <span>94%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-surface-container">
+                    <div class="h-2 rounded-full bg-primary w-[94%]"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between font-label-md text-label-md pb-1 text-on-surface">
+                    <span>Eye Fatigue Reduction (BenQ Halo)</span>
+                    <span>98%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-surface-container">
+                    <div class="h-2 rounded-full bg-primary-container w-[98%]"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between font-label-md text-label-md pb-1 text-on-surface">
+                    <span>Deep Work Focus (ANC Isolation)</span>
+                    <span>92%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-surface-container">
+                    <div class="h-2 rounded-full bg-tertiary w-[92%]"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant italic pt-2">
+                * สถิติอิงจากการติดตามชั่วโมงเขียนงาน (Deep Writing Hours) เฉลี่ย 32 ชั่วโมง/สัปดาห์
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Transparent affiliate disclosure disclaimer -->
+        <div
+          class="mt-14 p-6 rounded-2xl bg-surface-container-low/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-xl">info</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">
+              <span class="font-semibold text-on-surface">Disclosure:</span> บางลิงก์เป็น Affiliate links
+              เพื่อสนับสนุนการจัดทำเว็บไซต์ โดยไม่มีค่าใช้จ่ายเพิ่มเติมสำหรับผู้อ่าน
+            </p>
+          </div>
+          <a class="font-label-sm text-label-sm text-primary hover:underline whitespace-nowrap self-end sm:self-center"
+            href="#">
+            อ่านนโยบายความเป็นอิสระทางเนื้อหา →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_8px_rgba(11,28,48,0.03)]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12">
+        <div class="md:col-span-5 flex flex-col gap-3">
+          <div class="flex items-center gap-3"><span
+              class="font-headline-sm text-headline-sm text-on-surface">Arlann</span><span
+              class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant uppercase tracking-wider">Essays
+              &amp; Pedagogy</span></div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Written with craft and clarity.
+            Exploring the intersection of language, systemic engineering, and literary philosophy.</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant italic mt-1">“Arlann — Written with craft and
+            clarity.”</p>
+        </div>
+        <div class="md:col-span-3 flex flex-col gap-3"><span
+            class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Dispatches &amp;
+            Essays</span>
+          <div class="flex flex-col gap-2"><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://substack.com" rel="noreferrer" target="_blank">Substack Dispatches</a><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://github.com" rel="noreferrer" target="_blank">GitHub Engineering</a><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://x.com" rel="noreferrer" target="_blank">Notes on X / Twitter</a><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://linkedin.com" rel="noreferrer" target="_blank">LinkedIn Pedagogy</a></div>
+        </div>
+        <div class="md:col-span-4 flex flex-col gap-3"><span
+            class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Literary Studio
+            Brief</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Receive monthly essays, linguistic
+            deconstructions, and pedagogical materials directly in your inbox.</p>
+          <form class="flex items-stretch gap-2 mt-1"><input
+              class="w-full px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+              placeholder="reader@domain.com" type="email" /><button
+              class="px-4 py-2 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-on-surface transition-colors flex-shrink-0"
+              type="button">Subscribe</button></form>
+        </div>
+      </div>
+      <div
+        class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+        <p>© 2025 Arlann. All rights reserved. Intellectual sanctuary for readers.</p>
+        <div class="flex items-center gap-6 font-label-sm text-label-sm"><a
+            class="hover:text-on-surface transition-colors" href="#">Colophon</a><a
+            class="hover:text-on-surface transition-colors" href="#">Pedagogy Principles</a><a
+            class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/shop.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Keychron Q1 Pro Wireless Custom Mechanical Keyboard",
+    "category": "desk",
+    "price": "~฿6,890",
+    "specs": "Mechanical Switches / Bluetooth 5.1",
+    "rating": "4.9",
+    "badge": "Daily Driver",
+    "quote": "“สัมผัสการพิมพ์นุ่มแน่น เสียง thock สบายหู สลับใช้ระหว่าง Mac และ Windows ลื่นไหลมาก”",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDlm_j9lXUEnBbLJEvegOB4pKN5G45oM-VEuiG49SHJ13A9rlSNq2-9cLmQxj1EVEHyq_AYENzoSS7orDY2RjeuZAZh0VuREccAp8NtOMLvSBFIdcvy9cfx_GnN36wPPGbEC91CWt-jtAhKLsSFsCye3uFQQBk-JXrDrrm4GrfSeRw0SS_d0CLXBBCcOkJLwnvS0Wt1Wg6Y8dyulXzUUGUoAVzFAar1VeyAdqjWPS41K_U6x1G5zbcg6g",
+    "url": "https://keychron.com"
+  },
+  {
+    "id": 2,
+    "title": "BenQ ScreenBar Halo Monitor Light",
+    "category": "desk",
+    "price": "~฿5,990",
+    "specs": "Wireless Controller / Backlight",
+    "rating": "4.95",
+    "badge": "Must-have",
+    "quote": "“ตัดแสงสะท้อนหน้าจอได้ 100% สบายตามากตอนทำงานดึก รีโมทไร้สายปรับอุณหภูมิสีได้ละเอียด”",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAEIsF4-4IoEXzgRxsfiNUAjC58BhK4MS6T2k8von7e7uwtc0P2GVxeZhXylEyR-Zr8JKhexJq5xOzC4qT1SQ1ocVHN9SruYgMd5lT49oMacD3H3bMVr1xGVjL1Htr0kQ8qsAGu7n8VWyB4c3j2pQo9xGBRqmQ8cmc2krFtg6pJyXUiXCxnFCVL4JsGA7fgkmb8uly91pDaSFYviFnULOdik8p7TJzGk_5kOp6aO1Jamrk5yzzvsNfEDQ",
+    "url": "https://benq.com"
+  },
+  {
+    "id": 3,
+    "title": "Bellroy Classic Backpack Plus 24L",
+    "category": "edc",
+    "price": "~฿6,200",
+    "specs": "24L Capacity / Recycled Fabric",
+    "rating": "4.85",
+    "badge": "Staff Pick",
+    "quote": "“ผ้ากันน้ำ ช่องใส่ Laptop กันกระแทกดีเยี่ยม และทรงกระเป๋าไม่อ้วนเทอะทะ”",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA7ChVrnBaJwBQ4G_LrRd9YOVzCuelZlRae4HwZhr-YC1688aa8E8Gl2D7P14xnm1TnQji3K2YTEhzW_lPFvlCaZlzssFRxPADxiSpPLyzg23SWUsspC2wdtzncahDwUByvs5y-lVnYkHfYrTZj2slIoCnurj3_yTO9SdfuuwTqZVYeZ7qJ5wWbW9-RzHQkZ9RdX09CURb_9iLncn0Gxtn1KVFEz_XxEyh52qOrKiCF2AWdM94uiFmKvQ",
+    "url": "https://bellroy.com"
+  },
+  {
+    "id": 4,
+    "title": "Kindle Paperwhite 11th Gen",
+    "category": "books",
+    "price": "~฿5,490",
+    "specs": "6.8″ Display / 300 ppi / USB-C",
+    "rating": "5.0",
+    "badge": "Must-have",
+    "quote": "“หน้าจอ 300 ppi แสงไฟอุ่นอ่านสบาย แบตเตอรี่อยู่ได้เป็นเดือน ไม่ถูกรบกวนจากการแจ้งเตือน”",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDMls12pRTxhWYX2rwWt6G5gFHnZI4r5TBGnnjeBHjv-iiz2c1zg4xyEJRRUkIaYJuHkrNkaUMHVvErz9SwKwLX1Y_N92x9JjvJFBt4J0iGBjuaXEQyQOE7WDot9gcpPSGXGmgRSxzbJdAPNz7JQ21LwywLRGpbpxw-RTRYUh0IARvwrJ-nbBfk8cf-8qgdlTJ1PtuL8WXbWuTDru9Dx7KXef0sIOGOl5i1GbSEOBYmjqsM_7be5mOqng",
+    "url": "https://amazon.com"
+  },
+  {
+    "id": 5,
+    "title": "Sony WH-1000XM5 Noise Canceling Headphones",
+    "category": "tech",
+    "price": "~฿13,990",
+    "specs": "Industry Leading ANC / 30h Battery",
+    "rating": "4.9",
+    "badge": "Daily Driver",
+    "quote": "“ระบบตัดเสียงรบกวนเงียบสงัด เหมาะมากเวลาต้องการ Deep Work ในคาเฟ่”",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDEFisWhGO0KrwtOoQBYV5deHm1BSk_aewzLK3JeN13gRyyMOe0MSlPttnNFf-a2XjpOCnFZSIFlSzPPhYKnU1GdSTKk7VXYi8Uk9_vcXa-j6j-DvVmmAqfhvSnPo9wWWU7CMyDikDEbVocI3yujrChz5MU7O6p0gSiFfjQHdq1a2n8t7nCeLipe7UMoPL6WPEEmMB_bKMJV-0FoqK4TfiSmPA5dH7k32Wvf9hinObhVQCX70xmr7XacA",
+    "url": "https://sony.co.th"
+  },
+  {
+    "id": 6,
+    "title": "Roost Laptop Stand V3",
+    "category": "desk",
+    "price": "~฿2,450",
+    "specs": "Ultra-portable / 3-Level Height",
+    "rating": "4.8",
+    "badge": "คุ้มค่าน่าลอง",
+    "quote": "“พับเก็บได้เล็กมาก พกพาสะดวก ช่วยจัดระเบียบสรีระคอและหลังได้ทันที”",
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAswJWYjeh1NlVVGGvmJO3g3fbS-_l2uzej21_jmINVEDW7dJOPU6KntveKsDxd28JE8U3nAPLXIwS9mc4zh_LIOgOgtK9psiYTwCvnQ06kzehf-q2wGL6BbyoMlbex9JjBxB7EDIK9WqUkrWnY3zDbTi6gnH_TZFcp7XEex5_RBP0jeRvgePcEFwk1Lkp7dzpF5DthygySLmCCGevC1vdzimAzdJ5n-MtbO-PwEZHgjnSJrj4jQ_cz2w",
+    "url": "https://therooststand.com"
+  }
+]

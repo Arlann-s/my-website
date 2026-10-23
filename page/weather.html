@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arlann Weather Intelligence — global rain radar, live radar imagery and six-hour weather forecasts for locations worldwide." />
+  <title>Weather Intelligence — Arlann</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/weather.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/85 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]">
+  <div class="h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
+    <a class="flex items-center gap-3 group flex-shrink-0" href="../index.html" data-path="home">
+      <span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Arlann</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low" aria-label="Primary navigation">
+      <a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="../index.html">Home</a>
+      <a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="about-portfolio" href="about.html">About & Portfolio</a>
+      <a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="blog-hub" href="blog.html">Blog & Hub</a>
+      <a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="curated-shop" href="shop.html">Curated Shop</a>
+      <a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="english-studio" href="english-studio.html">English Studio</a>
+      <a class="px-4 py-1.5 rounded-full transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="weather" href="weather.html">Weather</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all" href="about.html#contact">Contact</a>
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-on-surface hover:bg-surface-container-high transition-colors" aria-label="เปิดเมนูนำทาง" aria-expanded="false"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+  <div id="mobile-drawer" class="md:hidden fixed inset-x-0 top-16 bg-surface-container-lowest/95 backdrop-blur-2xl border-b border-surface-container-high shadow-2xl transition-all duration-300 transform -translate-y-full opacity-0 pointer-events-none">
+    <div class="p-5 flex flex-col gap-2">
+      <a class="weather-mobile-link" data-path="home" href="../index.html">Home</a>
+      <a class="weather-mobile-link" data-path="about-portfolio" href="about.html">About & Portfolio</a>
+      <a class="weather-mobile-link" data-path="blog-hub" href="blog.html">Blog & Hub</a>
+      <a class="weather-mobile-link" data-path="curated-shop" href="shop.html">Curated Shop</a>
+      <a class="weather-mobile-link" data-path="english-studio" href="english-studio.html">English Studio</a>
+      <a class="weather-mobile-link bg-primary-container text-on-primary-container font-semibold" data-path="weather" href="weather.html">Weather Intelligence</a>
+    </div>
+  </div>
+</header>
+
+<main class="pt-16 page-fade-wrapper">
+  <div class="weather-hero">
+    <div class="weather-container">
+      <div class="weather-kicker"><span class="live-pulse"></span> FIELD NOTES / WEATHER INTELLIGENCE <span class="weather-source-status" id="updated">Connecting…</span></div>
+      <div class="weather-hero-grid">
+        <div>
+          <div class="weather-volume">VOL. 01 · GLOBAL WEATHER / SELECTED LOCATION</div>
+          <h1 class="weather-title">Reading the sky,<br><em>before it arrives.</em></h1>
+          <p class="weather-lede">เรดาร์ฝนและแบบจำลองหลายระบบ ถูกจัดวางเป็น “บันทึกภาคสนาม” เพื่อช่วยอ่านว่า ฝนกำลังมาไหม จะมาเมื่อไร และข้อมูลชุดนี้มั่นใจแค่ไหน</p>
+          <div class="weather-location"><span class="material-symbols-outlined">location_on</span><span>Analysis point</span><strong id="locationName">Bangkok</strong><button id="locateBtn" aria-label="ใช้ตำแหน่งปัจจุบัน"><span class="material-symbols-outlined">my_location</span></button></div>
+        </div>
+        <div class="weather-editorial-note">
+          <span class="weather-note-label">EDITORIAL NOTE</span>
+          <p>“Forecasting is not certainty. The useful forecast is the one that shows both its signal and its uncertainty.”</p>
+          <div class="weather-note-meta"><span>Live radar feed</span><span>+ 6-hour model forecast</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="weather-container weather-section">
+    <div class="weather-section-rule"><span>01 // OBSERVATION</span><i></i><small>What is happening now</small></div>
+    <div class="weather-grid-main">
+      <article class="weather-card weather-radar-card">
+        <div class="weather-card-head"><div><span class="weather-label">RADAR FIELD</span><h2>Rain Radar</h2></div><span class="weather-data-badge" id="radarBadge">Radar</span></div>
+        <div class="radar-location-tools"><form id="placeSearchForm" class="radar-search"><label for="placeSearch">ค้นหาพื้นที่ทั่วโลก</label><input id="placeSearch" type="search" placeholder="เช่น Tokyo, London, เชียงใหม่" autocomplete="off" /><button type="submit">ค้นหา</button></form><p id="placeSearchStatus" role="status">ค้นหาเมืองหรือคลิกบนแผนที่เพื่อเลือกจุดวิเคราะห์</p></div><div id="map" class="weather-map"></div>
+        <div class="weather-timeline"><button id="playBtn" aria-label="เล่นเรดาร์">▶</button><input id="timeline" type="range" min="0" max="0" value="0" /><span id="radarTime">—</span></div>
+        <div class="weather-legend"><span>Light</span><i></i><i></i><i></i><i></i><i></i><span>Heavy</span></div>
+        <p class="weather-caption">Radar: RainViewer · อัปเดตภาพเรดาร์ตาม feed ที่ให้บริการ; การคาดการณ์ล่วงหน้า 6 ชั่วโมงแสดงแยกจากเรดาร์ โดยใช้แบบจำลองพยากรณ์อากาศ</p>
+      </article>
+      <aside class="weather-side">
+        <div class="weather-card weather-risk-card">
+          <div class="weather-card-head"><div><span class="weather-label">RAIN INTELLIGENCE</span><h2>Risk Index</h2></div><span id="confidence" class="confidence-badge">—</span></div>
+          <div class="risk-number"><strong id="riskScore">—</strong><div><span id="riskLabel">กำลังวิเคราะห์</span><small id="riskDetail">Multi-model + radar</small></div></div>
+          <div class="risk-track"><i id="riskBar"></i></div>
+          <div class="risk-signal" id="signal">Waiting for data</div>
+          <div class="risk-eta" id="eta">ETA กำลังคำนวณ…</div>
+        </div>
+        <div class="weather-card weather-now-card">
+          <span class="weather-label">NOW / CURRENT CONDITIONS</span>
+          <div class="now-weather"><span id="weatherIcon">☁️</span><div><strong id="temp">—°</strong><span id="weatherText">—</span></div></div>
+          <div class="weather-metrics"><div><small>Rain</small><b id="rainNow">— mm</b></div><div><small>Probability</small><b id="popNow">—%</b></div><div><small>Wind</small><b id="windNow">— km/h</b></div></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="weather-container weather-section">
+    <div class="weather-section-rule"><span>02 // SYNTHESIS</span><i></i><small>What the models agree on</small></div>
+    <div class="weather-card weather-forecast-card">
+      <div class="weather-card-head"><div><span class="weather-label">NEXT 6 HOURS · FORECAST</span><h2>Rain trend, not just a number.</h2></div><span class="trend-badge" id="trendBadge">Analysing</span></div>
+      <div class="chart-wrap"><canvas id="rainChart" aria-label="กราฟแนวโน้มฝน"></canvas></div>
+      <div class="forecast-strip" id="forecastStrip"></div>
+      <div class="weather-insight" id="insight">กำลังอ่านแนวโน้ม…</div>
+    </div>
+  </section>
+
+  <section class="weather-container weather-section weather-bottom-grid">
+    <div class="weather-card weather-model-card">
+      <div class="weather-card-head"><div><span class="weather-label">MODEL CONSENSUS</span><h2>หลายแบบจำลอง</h2></div><span class="weather-data-badge">Cross-check</span></div>
+      <div id="modelList" class="model-list"></div>
+      <p id="modelNote" class="weather-caption">รอ ECMWF / GFS / ICON / JMA</p>
+    </div>
+    <div class="weather-card weather-quality-card">
+      <span class="weather-label">DATA QUALITY</span>
+      <h2 id="qualityTitle">กำลังตรวจสอบข้อมูล</h2>
+      <p id="qualityText">ระบบจะแสดงจำนวนโมเดลที่ตอบสนอง ความแตกต่างระหว่างโมเดล และอายุของ radar แทนการซ่อนความไม่แน่นอน</p>
+      <div class="quality-list"><span>Radar observation</span><b id="radarQuality">Checking</b><span>Model agreement</span><b id="modelQuality">Checking</b></div>
+    </div>
+  </section>
+
+  <section class="weather-container weather-section weather-method">
+    <div class="weather-section-rule"><span>03 // METHOD</span><i></i><small>How to read this page</small></div>
+    <div class="method-grid"><div><span>01</span><h3>Observe</h3><p>Radar tells us what is actually being observed around the location.</p></div><div><span>02</span><h3>Compare</h3><p>ECMWF, GFS, ICON and JMA are compared instead of trusting one model blindly.</p></div><div><span>03</span><h3>Qualify</h3><p>Risk and confidence are deliberately separated. Risk is an analytical index, not a calibrated probability.</p></div></div>
+  </section>
+</main>
+
+<footer class="w-full bg-surface-container-low mt-space-xl">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 flex flex-col md:flex-row items-start justify-between gap-6">
+    <div><div class="font-headline-sm text-headline-sm text-on-surface">Arlann</div><p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Written with craft and clarity.</p></div>
+    <div class="font-label-sm text-label-sm text-on-surface-variant">Weather Intelligence · Radar + Multi-model synthesis · Informational use only</div>
+  </div>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="../js/main.js" defer></script>
+<script src="../js/weather.js" defer></script>
+</body>
+</html>

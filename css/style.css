@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Base Styles & Resets - Arlann Literary & Pedagogical Architecture
+   ========================================================================== */
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Hide default scrollbars while preserving scrolling ability */
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Selection Coloration */
+::selection {
+  background-color: #c4e7ff;
+  color: #001e2c;
+}

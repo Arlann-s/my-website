@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Verbum: Minimalist Reading Companion",
+    "category": "development",
+    "tag": "Interactive Web Software",
+    "stat": "Active 2,400+ Users",
+    "description": "A stripped-down digital reading canvas engineered to eliminate cognitive friction. Features adaptive typographic scales, phonetic lookup overlays, and client-side privacy-first storage."
+  },
+  {
+    "id": 2,
+    "title": "12 Tenses Interactive Grammar Matrix",
+    "category": "creative-writing",
+    "tag": "Pedagogy &amp; Linguistic Framework",
+    "stat": "",
+    "description": "Reconceptualizing English verb tenses not as arbitrary memorization lists, but as a two-dimensional timeline coordinate plane (Time × Aspect). Adopted by over 40 language educators."
+  },
+  {
+    "id": 3,
+    "title": "Thai-English Tech Terminology Lexicon",
+    "category": "development",
+    "tag": "Bilingual Knowledge Base",
+    "stat": "",
+    "description": "A contextual concordance mapping tricky technical jargon (idempotence, polymorphism, race condition) into precise Thai explanations with phonetic stress notes and live code examples."
+  },
+  {
+    "id": 4,
+    "title": "Minimalist Desk Space Architecture",
+    "category": "special-projects",
+    "tag": "Industrial &amp; Spatial Case Study",
+    "stat": "",
+    "description": "An experiential investigation into cognitive load and physical spatial constraints. Detailing how material curation, light angles, and analog writing stations dramatically boost intellectual stamina."
+  }
+]

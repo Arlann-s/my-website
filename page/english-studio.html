@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>Arlann — Writer, Educator &amp; Engineer</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../js/tailwind.config.js"></script>
+</head>
+
+<body
+  class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/85 backdrop-blur-md shadow-[0_1px_8px_rgba(11,28,48,0.04)]">
+    <div class="h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-4 flex-shrink-0">
+        <a class="flex items-center gap-3 group" data-path="home" href="../index.html">
+          <img alt="Arlann Wordmark Logo" class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1U-i7A7a6eJgRUYHOJOp0oRoG5JVMh6CSv5T09Kqraee0XbqT5H8BOp0AATUp4b9rpBSNaVkTQwNLddrpceJ7vB_KRyKX9EfeIEvwMIIR7XQfs9SPaqS6noJ9KA1IV7V1y76QjeeLaxCn1B0NMJjV586n8gt0V4fasPJ_Xu-KltqZ3x61958xtfofecuCLfhNDRFm-NQLJxzaiT6Y0B0BPTH6e0VBAh4bzhW0joVSZIYh2RLRexNSmmuYZz" />
+          <span
+            class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">Arlann</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-1.5 p-1 rounded-full bg-surface-container-low"
+        data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm">
+        <a class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="home" href="../index.html">Home</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="about-portfolio" href="about.html">About & Portfolio</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="blog-hub" href="blog.html">Blog & Hub</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="curated-shop" href="shop.html">Curated Shop</a><a aria-current="page"
+          class="px-4 py-1.5 rounded-full transition-all bg-primary-container text-on-primary-container font-semibold shadow-sm"
+          data-path="english-studio" href="english-studio.html">English Studio</a><a
+          class="px-4 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+          data-path="weather" href="weather.html">Weather</a>
+      </nav>
+
+      <!-- Header Actions (Contact, Profile, Mobile Hamburger) -->
+      <div class="flex items-center gap-3 sm:gap-4 flex-shrink-0">
+        <a class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-all"
+          data-path="contact" href="about.html#contact">
+          <span>Contact / สื่อสาร</span>
+        </a>
+        <div class="relative flex items-center">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_1px_rgba(56,189,248,0.35)]"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdJ8ufqBa8tN-uPQJgjVwiu79-10bUBrR-TOYExQlWwGFRsd3KsoU17HopRCafzsMkxqNJOYJBbGo9fqyv2BOb00pQn1T-DZwmy__HGqQ-3LWVf3FHCQvlZHF6b45bVBeEH7mbf5E8vzcOo-X70rFo3Kf2YiC9ifgKPwU934cYu1ZY-6wHP7HogwgyFNt9TS__YrkshAizxz6MiHX40FhMOLr_fuijVaHAiwE_x6-cE2MAwe3ojisF5A" />
+        </div>
+        <button id="mobile-menu-btn"
+          class="md:hidden p-2 rounded-xl text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center focus:outline-none"
+          aria-label="เปิดเมนูนำทาง" aria-expanded="false">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Professional Mobile Navigation Drawer -->
+    <div id="mobile-drawer"
+      class="md:hidden fixed inset-x-0 top-16 bg-surface-container-lowest/95 backdrop-blur-2xl border-b border-surface-container-high shadow-2xl transition-all duration-300 transform -translate-y-full opacity-0 pointer-events-none max-h-[calc(100vh-4rem)] overflow-y-auto">
+      <div class="p-5 flex flex-col gap-3">
+        <div class="flex items-center justify-between pb-2 border-b border-surface-container-high/60">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Navigation</span>
+          </div>
+          <span class="font-label-sm text-label-sm text-outline">A Literary &amp; Systems Sanctuary</span>
+        </div>
+        <nav class="flex flex-col gap-1.5 pt-1">
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="home" href="../index.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">home</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Home</span>
+              <span class="text-xs text-on-surface-variant font-normal">หน้าแรก • Sanctuary & Dispatch</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="about-portfolio" href="about.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">person</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">About & Portfolio</span>
+              <span class="text-xs text-on-surface-variant font-normal">ตัวตน ผลงานวิศวกรรม & ปรัชญา</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="blog-hub" href="blog.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">article</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Blog & Hub</span>
+              <span class="text-xs text-on-surface-variant font-normal">ความเรียง บทความ & คลังปัญญา</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="curated-shop" href="shop.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">storefront</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Curated Shop</span>
+              <span class="text-xs text-on-surface-variant font-normal">ป้ายยาของใช้จริง Desk Setup & EDC</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold shadow-sm"
+            data-path="english-studio" href="english-studio.html" aria-current="page">
+            <span class="material-symbols-outlined text-[20px] text-primary">translate</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">English Studio</span>
+              <span class="text-xs text-on-surface-variant font-normal">12 Tenses, Scenarios & Flashcards</span>
+            </div>
+          </a>
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-xl transition-all font-label-md text-label-md text-on-surface hover:bg-surface-container-high"
+            data-path="weather" href="weather.html">
+            <span class="material-symbols-outlined text-[20px] text-primary">cloud</span>
+            <div class="flex flex-col">
+              <span class="font-semibold text-on-surface">Weather Intelligence</span>
+              <span class="text-xs text-on-surface-variant font-normal">Radar, models &amp; rain trend</span>
+            </div>
+          </a>
+        </nav>
+        <div class="pt-3 border-t border-surface-container-high/60 flex flex-col gap-2">
+          <a class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-on-surface transition-all shadow-sm"
+            data-path="contact" href="about.html#contact">
+            <span class="material-symbols-outlined text-[18px]">mail</span>
+            <span>Contact / สื่อสารโดยตรง</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full pt-16 bg-surface min-h-[calc(100vh-16rem)] page-fade-wrapper">
+    <div class="flex flex-col w-full">
+      <!-- Interactive Sticky Reading & Studio Progress Bar -->
+      <div class="sticky top-16 z-40 w-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+        <div class="h-1 bg-primary-container w-0 transition-all duration-300" id="learning-progress"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-3 flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <span class="flex h-2.5 w-2.5 rounded-full bg-primary-container animate-pulse"></span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Pedagogical
+              Practice Room</span>
+            <span
+              class="hidden sm:inline-block font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-primary font-semibold">ห้องเรียนภาษาอังกฤษแบบเข้าใจบริบท</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 transition-colors"
+              onclick="toggleAudioGlobal(this)">
+              <span class="material-symbols-outlined text-[16px]">volume_up</span>
+              <span class="hidden md:inline">Pronunciation Assistant: <strong class="text-primary">Ready</strong></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Section 1: Header & Encouragement Hero -->
+      <section class="w-full pt-10 pb-16 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 flex flex-col gap-6">
+            <div
+              class="inline-flex items-center gap-2 self-start px-3.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant">
+              <span class="material-symbols-outlined text-[18px] text-tertiary">spa</span>
+              <span class="font-label-sm text-label-sm tracking-wider uppercase">Arlann Pedagogical Studio • English for
+                You</span>
+            </div>
+            <div class="flex flex-col gap-3">
+              <h1 class="font-display-lg text-display-lg text-on-surface leading-tight tracking-tight">
+                English for You &amp; <br /><span class="italic font-display-lg text-primary">Everyday
+                  Communication</span>
+              </h1>
+              <p class="font-headline-sm text-headline-sm text-on-surface-variant max-w-2xl font-normal">
+                ภาษาอังกฤษที่เป็นธรรมชาติ ใช้ได้จริงในชีวิตประจำวัน ไม่เน้นท่องจำโครงสร้างแห้งแล้ง แต่เน้น
+                “เข้าใจบริบทและความรู้สึก” ของบทสนทนา
+              </p>
+            </div>
+            <p class="font-body-md text-body-md text-secondary max-w-xl">
+              Designed by Arlann with literary clarity and cognitive pacing. Master the natural rhythm of speaking,
+              subtle tenses, and authentic expressions without fear of perfectionism.
+            </p>
+            <!-- Quick Jump Navigation Pills -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Jump To Module:</span>
+              <a class="px-4 py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all shadow-sm flex items-center gap-2 group"
+                href="#tenses-navigator">
+                <span
+                  class="material-symbols-outlined text-[18px] group-hover:rotate-45 transition-transform">schedule</span>
+                12 Tenses Navigator
+              </a>
+              <a class="px-4 py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all shadow-sm flex items-center gap-2 group"
+                href="#cheat-sheets">
+                <span class="material-symbols-outlined text-[18px]">forum</span>
+                Conversation Cheat Sheets
+              </a>
+              <a class="px-4 py-2 rounded-full bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all shadow-sm flex items-center gap-2 group"
+                href="#flashcards">
+                <span class="material-symbols-outlined text-[18px]">style</span>
+                Vocabulary Flashcards
+              </a>
+            </div>
+          </div>
+          <!-- Hero Visual Art / Pedagogical Dial -->
+          <div class="lg:col-span-4 flex flex-col items-center justify-center">
+            <div
+              class="w-full p-6 rounded-2xl bg-surface-container-lowest shadow-md flex flex-col gap-5 relative overflow-hidden">
+              <div
+                class="absolute -right-12 -top-12 w-36 h-36 rounded-full bg-primary-fixed/40 blur-2xl pointer-events-none">
+              </div>
+              <div class="flex items-center justify-between pb-3">
+                <span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-[20px]">psychology_alt</span> Mindset Anchor
+                </span>
+                <span
+                  class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container">Rule
+                  #1</span>
+              </div>
+              <div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+                <p class="font-headline-sm text-headline-sm text-on-surface italic">“Fluency is not about speed; it is
+                  about resonance.”</p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">การสื่อสารที่มีเสน่ห์ไม่ใช่การพูดเร็วที่สุด
+                  แต่คือการเลือกถ้อยคำที่ส่งความรู้สึกถึงใจผู้ฟังได้อย่างแม่นยำ</p>
+              </div>
+              <!-- Mini Inline Interactive Confidence Meter -->
+              <div class="flex flex-col gap-2 pt-1">
+                <div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant">
+                  <span>Today's Learning Pulse</span>
+                  <span class="text-primary font-bold">Natural Intuition: 85%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+                  <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                </div>
+                <div class="flex justify-between text-[11px] text-outline font-label-sm">
+                  <span>Grammar Stress</span>
+                  <span class="text-primary">Contextual Clarity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: Core Feature 1 — The 12 Tenses Navigator -->
+      <section class="w-full py-16 px-6 lg:px-12 bg-surface-container-low" id="tenses-navigator">
+        <div class="max-w-7xl mx-auto flex flex-col gap-10">
+          <!-- Section Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2">
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Core
+                  Matrix 01</span>
+                <span class="text-outline">/</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Time &amp; Aspect Engine</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">The 12 Tenses Navigator</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                สลับมุมมองระหว่างกาลเวลา (Past / Present / Future) และลักษณะของการกระทำ
+                เพื่อเข้าใจความรู้สึกที่แท้จริงเบื้องหลังแต่ละ Tense โดยไม่ต้องท่องจำ
+              </p>
+            </div>
+            <!-- Quick filter chips / aspect cues -->
+            <div
+              class="flex items-center gap-2 bg-surface-container-lowest p-1.5 rounded-xl shadow-sm self-start overflow-x-auto max-w-full no-scrollbar touch-scroll">
+              <button
+                class="time-tab active px-3 py-1.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="setMatrixTime('all')">All Times</button>
+              <button
+                class="time-tab px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="setMatrixTime('past')">Past</button>
+              <button
+                class="time-tab px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="setMatrixTime('present')">Present</button>
+              <button
+                class="time-tab px-3 py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="setMatrixTime('future')">Future</button>
+            </div>
+          </div>
+          <!-- Mobile swipe gesture hint -->
+          <div class="flex items-center justify-between text-xs text-outline md:hidden pt-1 pb-1">
+            <span class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+              <span class="material-symbols-outlined text-[16px] animate-pulse">swipe</span>
+              <span>ปัดนิ้วซ้าย-ขวา เพื่อดูตาราง 12 Tenses ให้ครบ</span>
+            </span>
+            <span class="font-label-sm text-label-sm text-outline">เลื่อนดูได้ &rarr;</span>
+          </div>
+          <!-- 4x3 Interactive Time Matrix Grid -->
+          <div class="w-full overflow-x-auto pb-4 touch-scroll">
+            <div class="min-w-[760px] grid grid-cols-4 gap-3 bg-surface-container-lowest p-5 rounded-2xl shadow-sm">
+              <!-- Table Header -->
+              <div class="p-3 font-label-md text-label-md uppercase tracking-wider text-outline flex items-center">
+                Aspect \ Time</div>
+              <div
+                class="p-3 text-center font-label-md text-label-md font-semibold text-on-surface bg-surface-container-low rounded-lg">
+                Past (อดีต)</div>
+              <div
+                class="p-3 text-center font-label-md text-label-md font-semibold text-primary bg-primary-fixed/30 rounded-lg">
+                Present (ปัจจุบัน)</div>
+              <div
+                class="p-3 text-center font-label-md text-label-md font-semibold text-tertiary bg-secondary-container/40 rounded-lg">
+                Future (อนาคต)</div>
+              <!-- Row 1: Simple -->
+              <div class="p-3 flex flex-col justify-center bg-surface-container rounded-lg">
+                <span class="font-title-md text-title-md text-on-surface">Simple</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">ข้อเท็จจริง / ทำเป็นนิสัย</span>
+              </div>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('past-simple')">
+                <span class="font-label-sm text-label-sm text-outline">V.2</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Past Simple</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I called you.”</span>
+              </button>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('present-simple')">
+                <span class="font-label-sm text-label-sm text-primary">V.1 / s, es</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Present Simple</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I drink coffee.”</span>
+              </button>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('future-simple')">
+                <span class="font-label-sm text-label-sm text-tertiary">will + V.inf</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Future Simple</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I will join you.”</span>
+              </button>
+              <!-- Row 2: Continuous -->
+              <div class="p-3 flex flex-col justify-center bg-surface-container rounded-lg">
+                <span class="font-title-md text-title-md text-on-surface">Continuous</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">กำลังเกิดขึ้นในขณะนั้น</span>
+              </div>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('past-cont')">
+                <span class="font-label-sm text-label-sm text-outline">was/were + V-ing</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Past Continuous</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I was reading.”</span>
+              </button>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('present-cont')">
+                <span class="font-label-sm text-label-sm text-primary">is/am/are + V-ing</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Present Continuous</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I am learning.”</span>
+              </button>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('future-cont')">
+                <span class="font-label-sm text-label-sm text-tertiary">will be + V-ing</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Future Continuous</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I will be waiting.”</span>
+              </button>
+              <!-- Row 3: Perfect -->
+              <div class="p-3 flex flex-col justify-center bg-surface-container rounded-lg">
+                <span class="font-title-md text-title-md text-on-surface">Perfect</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">เสร็จสิ้น/ส่งผลเกี่ยวเนื่อง</span>
+              </div>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('past-perfect')">
+                <span class="font-label-sm text-label-sm text-outline">had + V.3</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Past Perfect</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I had arrived.”</span>
+              </button>
+              <!-- Active Highlighted by default: Present Perfect -->
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-primary-container/20 ring-2 ring-primary text-on-surface transition-all flex flex-col gap-1.5 shadow-md"
+                id="default-tense-trigger" onclick="selectTense('present-perfect')">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-sm text-label-sm text-primary font-bold">have/has + V.3</span>
+                  <span class="h-2 w-2 rounded-full bg-primary animate-ping"></span>
+                </div>
+                <span class="font-body-md text-body-md font-bold text-on-surface">Present Perfect ★</span>
+                <span class="font-body-sm text-body-sm text-primary font-medium italic">“I have lost my keys.”</span>
+              </button>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('future-perfect')">
+                <span class="font-label-sm text-label-sm text-tertiary">will have + V.3</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Future Perfect</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I will have finished.”</span>
+              </button>
+              <!-- Row 4: Perfect Continuous -->
+              <div class="p-3 flex flex-col justify-center bg-surface-container rounded-lg">
+                <span class="font-title-md text-title-md text-on-surface">Perf. Cont.</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">ทำต่อเนื่องยาวนาน</span>
+              </div>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('past-perf-cont')">
+                <span class="font-label-sm text-label-sm text-outline">had been + V-ing</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Past Perf. Cont.</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I had been trying.”</span>
+              </button>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('present-perf-cont')">
+                <span class="font-label-sm text-label-sm text-primary">have been + V-ing</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Present Perf. Cont.</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I have been waiting.”</span>
+              </button>
+              <button
+                class="tense-btn p-4 rounded-xl text-left bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-1.5 shadow-sm"
+                onclick="selectTense('future-perf-cont')">
+                <span class="font-label-sm text-label-sm text-tertiary">will have been + V-ing</span>
+                <span class="font-body-md text-body-md font-semibold text-on-surface">Future Perf. Cont.</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant italic">“I will have been
+                  working.”</span>
+              </button>
+            </div>
+          </div>
+          <!-- Deep Dive Interactive Tense Card Component -->
+          <div class="bg-surface-container-lowest rounded-2xl p-8 shadow-md flex flex-col gap-8 transition-all"
+            id="tense-detail-view">
+            <!-- Card Header Info -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 gap-4">
+              <div class="flex items-center gap-3">
+                <span class="p-2 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+                  <span class="material-symbols-outlined text-[24px]">auto_stories</span>
+                </span>
+                <div>
+                  <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold"
+                    id="detail-category">Present Aspect • Experience &amp; Current Effect</span>
+                  <h3 class="font-headline-md text-headline-md text-on-surface" id="detail-title">Present Perfect Tense
+                  </h3>
+                </div>
+              </div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="font-label-md text-label-md text-on-surface-variant px-3 py-1 rounded-full bg-surface-container-low">
+                  Formula: <strong class="text-on-surface" id="detail-formula">Subject + have / has + V.3</strong>
+                </span>
+              </div>
+            </div>
+            <!-- 4 Pillar Content Breakdown -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- 1. Structure & Formula -->
+              <div class="p-5 rounded-xl bg-surface-container-low flex flex-col gap-3">
+                <div class="flex items-center gap-2 text-primary font-label-md text-label-md font-semibold">
+                  <span class="material-symbols-outlined text-[18px]">functions</span>
+                  1. โครงสร้างจำง่าย
+                </div>
+                <div class="font-title-md text-title-md text-on-surface" id="pillar-formula">
+                  Subject + have/has + V.3
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant" id="pillar-formula-desc">
+                  • I / You / We / They + <strong>have</strong><br />
+                  • He / She / It + <strong>has</strong><br />
+                  ตามด้วยกริยาช่อง 3 เสมอ
+                </p>
+              </div>
+              <!-- 2. Situational Context -->
+              <div class="p-5 rounded-xl bg-surface-container-low flex flex-col gap-3">
+                <div class="flex items-center gap-2 text-primary font-label-md text-label-md font-semibold">
+                  <span class="material-symbols-outlined text-[18px]">psychology</span>
+                  2. หัวใจและบริบทการใช้
+                </div>
+                <div class="font-title-md text-title-md text-on-surface" id="pillar-context">
+                  ผลลัพธ์ยังต่อเนื่องถึงตอนนี้
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant" id="pillar-context-desc">
+                  ใช้เมื่อเหตุการณ์ในอดีตส่งผลชัดเจนถึงปัจจุบัน หรือใช้เพื่อเล่าประสบการณ์ในชีวิตว่า “เคย / ไม่เคยทำ”
+                  โดยไม่ได้สนใจเวลาที่เจาะจง
+                </p>
+              </div>
+              <!-- 3. Real-world Contrast Sentences -->
+              <div class="p-5 rounded-xl bg-surface-container-high/60 flex flex-col gap-3">
+                <div class="flex items-center gap-2 text-tertiary font-label-md text-label-md font-semibold">
+                  <span class="material-symbols-outlined text-[18px]">chat</span>
+                  3. ประโยคจริงในชีวิต
+                </div>
+                <div class="flex flex-col gap-2 font-body-sm text-body-sm">
+                  <div class="p-2.5 rounded-lg bg-surface-container-lowest shadow-xs">
+                    <span class="text-xs uppercase font-label-sm text-outline block">สถานการณ์ทั่วไป</span>
+                    <span class="font-medium text-on-surface" id="pillar-sentence-1">“I have lost my keys.”</span>
+                    <p class="text-secondary text-xs mt-0.5" id="pillar-sentence-1-sub">(แปลว่า: กุญแจยังหายอยู่ตอนนี้
+                      ยังหาไม่เจอ)</p>
+                  </div>
+                  <div class="p-2.5 rounded-lg bg-surface-container-lowest shadow-xs">
+                    <span class="text-xs uppercase font-label-sm text-outline block">คุยกับแฟน / สนิท</span>
+                    <span class="font-medium text-primary" id="pillar-sentence-2">“Have you eaten yet? / I've missed you
+                      all day!”</span>
+                    <p class="text-secondary text-xs mt-0.5" id="pillar-sentence-2-sub">(กินข้าวหรือยัง? /
+                      คิดถึงเธอมาทั้งวันเลย)</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 4. Pitfalls & Contrast Warning -->
+              <div class="p-5 rounded-xl bg-surface-container-low flex flex-col gap-3">
+                <div class="flex items-center gap-2 text-error font-label-md text-label-md font-semibold">
+                  <span class="material-symbols-outlined text-[18px]">warning</span>
+                  4. ข้อควรระวัง (Pitfalls)
+                </div>
+                <div class="font-title-md text-title-md text-error" id="pillar-pitfall">
+                  ห้ามใส่เวลาเจาะจงในอดีต!
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant" id="pillar-pitfall-desc">
+                  ❌ ห้ามใช้: <em>I have seen him yesterday.</em><br />
+                  ✅ ต้องแก้เป็น: <strong>I saw him yesterday.</strong> (Past Simple) เพราะมีคำระบุเวลาอดีตชัดเจน
+                  (yesterday, last year, ago)
+                </p>
+              </div>
+            </div>
+            <!-- Comparative Contrast Bar: Present Perfect vs Past Simple -->
+            <div
+              class="p-5 rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-[28px]">compare_arrows</span>
+                <div>
+                  <span class="font-title-md text-title-md text-on-surface">จุดสังเกตชวนสับสน: Present Perfect VS Past
+                    Simple</span>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Past Simple = จบแล้ว
+                    ไม่เกี่ยวอะไรกับตอนนี้ | Present Perfect = จิตใจยังเชื่อมโยงกับปัจจุบัน</p>
+                </div>
+              </div>
+              <button
+                class="px-4 py-2 rounded-lg bg-on-surface text-surface hover:bg-inverse-surface font-label-md text-label-md transition-colors flex items-center gap-2 flex-shrink-0"
+                onclick="playTenseComparisonAudio()">
+                <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                ฟังเสียงตัวอย่างเปรียบเทียบ
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3: Core Feature 2 — Real-World Conversation Cheat Sheets -->
+      <section class="w-full py-16 px-6 lg:px-12 max-w-7xl mx-auto" id="cheat-sheets">
+        <div class="flex flex-col gap-10">
+          <!-- Header & Scenario Tabs -->
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-2">
+              <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Core Matrix
+                02</span>
+              <span class="text-outline">/</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Dialogue Cheat Sheets</span>
+            </div>
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+              <div>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface">Real-World Conversation Cheat Sheets</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                  บทสนทนาจริงที่หยิบไปใช้ได้ทันที ไม่แข็งทื่อ พร้อมปุ่มฟังการออกเสียงและแตะเพื่อดูถอดรหัสความหมายภาษาไทย
+                </p>
+              </div>
+              <span
+                class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container">
+                Tap speech card for Thai nuance
+              </span>
+            </div>
+            <!-- Scenario Category Navigation Tabs -->
+            <div class="flex items-center gap-2 pt-2 overflow-x-auto no-scrollbar touch-scroll sm:flex-wrap pb-1">
+              <button
+                class="scenario-tab active px-4 py-2 rounded-xl bg-inverse-surface text-inverse-on-surface font-label-md text-label-md shadow-sm transition-all flex items-center gap-2 whitespace-nowrap flex-shrink-0"
+                onclick="switchScenario('cafe')">
+                <span class="material-symbols-outlined text-[18px]">local_cafe</span>
+                สั่งอาหาร / คาเฟ่
+              </button>
+              <button
+                class="scenario-tab px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all flex items-center gap-2 whitespace-nowrap flex-shrink-0"
+                onclick="switchScenario('smalltalk')">
+                <span class="material-symbols-outlined text-[18px]">sms</span>
+                ชวนคุยยามว่าง / Small Talk
+              </button>
+              <button
+                class="scenario-tab px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all flex items-center gap-2 whitespace-nowrap flex-shrink-0"
+                onclick="switchScenario('travel')">
+                <span class="material-symbols-outlined text-[18px]">flight_takeoff</span>
+                ท่องเที่ยวต่างประเทศ
+              </button>
+              <button
+                class="scenario-tab px-4 py-2 rounded-xl bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all flex items-center gap-2 whitespace-nowrap flex-shrink-0"
+                onclick="switchScenario('empathy')">
+                <span class="material-symbols-outlined text-[18px]">favorite</span>
+                แสดงความรู้สึกและความห่วงใย
+              </button>
+            </div>
+          </div>
+          <!-- Dialogue Bubbles Canvas -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start" id="dialogue-container">
+            <!-- Scenario Visual Sidebar / Context Card -->
+            <div class="lg:col-span-4 rounded-2xl bg-surface-container-low p-6 flex flex-col gap-5 shadow-sm">
+              <div class="relative w-full h-44 rounded-xl overflow-hidden shadow-xs">
+                <img class="w-full h-full object-cover"
+                  data-alt="A warm cozy specialty cafe interior in soft natural sunlight, with artisan barista pour-over setup, ceramic cups, and a quiet wooden counter in an editorial literary style."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoJ3t4Zx6Kc1WI3RHJyZJG8SpK9V_UayJnc4HZ2ttYtR6thBqaXY5B1C7We-yzJACsbYPYPFuzjyX7X9C6uQxy-N3VJXweXXgWt3yBrDO6UqksZqzwnD2-tutT7Cpu49lJ4bwsPRthNzZ9X0h1oVx1jPmR4ye1zSvvegxSCR8fkZRi_NG5SBgw--Xm9LlMwPRbS_D1zih7r5n5kST2D03IoGuPeVSwiyHrKYshV-oKwiqTQwd-c4lzkQ" />
+                <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent">
+                </div>
+                <div class="absolute bottom-3 left-3 text-surface-container-lowest">
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container"
+                    id="scenario-scene-badge">Setting: Specialty Coffee Bar</span>
+                  <p class="font-title-md text-title-md font-semibold mt-1" id="scenario-scene-title">Ordering Coffee
+                    &amp; Custom Requests</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-primary text-[18px]">tips_and_updates</span>
+                  Pro Cultural Tip
+                </span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant" id="scenario-pro-tip">
+                  ในร้านกาแฟต่างประเทศ การใช้ “Can I get...” ฟังดูเป็นธรรมชาติและสุภาพมาก ไม่จำเป็นต้องใช้ “I want...”
+                  ซึ่งอาจฟังดูแข็งไป
+                </p>
+              </div>
+              <div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-xs flex items-center justify-between">
+                <div class="flex flex-col">
+                  <span class="font-label-sm text-label-sm text-outline">Target Tone</span>
+                  <span class="font-body-md text-body-md font-semibold text-primary" id="scenario-tone">Warm &amp;
+                    Natural Casual</span>
+                </div>
+                <span class="material-symbols-outlined text-tertiary">mood</span>
+              </div>
+            </div>
+            <!-- Speech Bubbles Dialogue Thread -->
+            <div class="lg:col-span-8 flex flex-col gap-4" id="dialogue-thread">
+              <!-- Bubble 1: Speaker A -->
+              <div
+                class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 transition-all hover:shadow-md cursor-pointer group"
+                onclick="toggleTranslation(this)">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="h-7 w-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm font-bold">You</span>
+                    <span class="font-label-md text-label-md font-semibold text-on-surface">Customer (You)</span>
+                  </div>
+                  <button
+                    class="h-8 w-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary-container flex items-center justify-center transition-colors"
+                    onclick="event.stopPropagation(); speakText('Can I get an iced oat latte with half-sweet, please?')">
+                    <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                  </button>
+                </div>
+                <p class="font-title-md text-title-md text-on-surface leading-snug">
+                  “Hi there! Can I get an iced oat latte with half-sweet, please?”
+                </p>
+                <div class="translation-box hidden pt-2 mt-1 border-t-0 flex flex-col gap-1 text-primary">
+                  <div class="flex items-center gap-1.5 font-label-sm text-label-sm uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[14px]">translate</span> คำแปล &amp; ความรู้สึกลึกซึ้ง
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-normal">
+                    “สวัสดีครับ/ค่ะ ขอกาแฟโอ๊ตลาเต้เย็น หวานน้อย (หวานครึ่งเดียว) แก้วนึงครับ/ค่ะ”
+                  </p>
+                  <span class="text-xs text-outline italic">Tip: “half-sweet” เข้าใจตรงกันทันที ดีกว่าพูดว่า “sweet
+                    50%”</span>
+                </div>
+                <div class="flex items-center justify-between pt-1">
+                  <span
+                    class="font-label-sm text-label-sm text-outline group-hover:text-primary transition-colors flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">touch_app</span> Click bubble to reveal Thai
+                    meaning
+                  </span>
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Polite
+                    Request</span>
+                </div>
+              </div>
+              <!-- Bubble 2: Speaker B -->
+              <div
+                class="p-5 rounded-2xl bg-surface-container-high/40 shadow-sm flex flex-col gap-3 transition-all hover:shadow-md cursor-pointer group"
+                onclick="toggleTranslation(this)">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="h-7 w-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">Barista</span>
+                    <span class="font-label-md text-label-md font-semibold text-on-surface">Barista</span>
+                  </div>
+                  <button
+                    class="h-8 w-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary-container flex items-center justify-center transition-colors"
+                    onclick="event.stopPropagation(); speakText('Sure thing! For here or to go? And what name can I put on that?')">
+                    <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                  </button>
+                </div>
+                <p class="font-title-md text-title-md text-on-surface leading-snug">
+                  “Sure thing! For here or to go? And what name can I put on that?”
+                </p>
+                <div class="translation-box hidden pt-2 mt-1 flex flex-col gap-1 text-primary">
+                  <div class="flex items-center gap-1.5 font-label-sm text-label-sm uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[14px]">translate</span> คำแปล &amp; ความรู้สึกลึกซึ้ง
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-normal">
+                    “ได้เลยครับ! ทานที่นี่หรือรับกลับบ้านดีครับ? แล้วแก้วนี้เขียนชื่อคุณอะไรดีครับ?”
+                  </p>
+                  <span class="text-xs text-outline italic">Tip: “Sure thing!”
+                    เป็นคำตอบรับที่กระตือรือร้นและเป็นมิตรกว่า “Yes” ทั่วไป</span>
+                </div>
+                <div class="flex items-center justify-between pt-1">
+                  <span
+                    class="font-label-sm text-label-sm text-outline group-hover:text-primary transition-colors flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">touch_app</span> Click bubble to reveal Thai
+                    meaning
+                  </span>
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Common
+                    Follow-up</span>
+                </div>
+              </div>
+              <!-- Bubble 3: Speaker A -->
+              <div
+                class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 transition-all hover:shadow-md cursor-pointer group"
+                onclick="toggleTranslation(this)">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="h-7 w-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm font-bold">You</span>
+                    <span class="font-label-md text-label-md font-semibold text-on-surface">Customer (You)</span>
+                  </div>
+                  <button
+                    class="h-8 w-8 rounded-full bg-surface-container hover:bg-primary-container hover:text-on-primary-container flex items-center justify-center transition-colors"
+                    onclick="event.stopPropagation(); speakText('To go, please. Put it down under Arlann. Also, could I grab an extra napkin?')">
+                    <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                  </button>
+                </div>
+                <p class="font-title-md text-title-md text-on-surface leading-snug">
+                  “To go, please. Put it down under Arlann. Also, could I grab an extra napkin?”
+                </p>
+                <div class="translation-box hidden pt-2 mt-1 flex flex-col gap-1 text-primary">
+                  <div class="flex items-center gap-1.5 font-label-sm text-label-sm uppercase tracking-wider">
+                    <span class="material-symbols-outlined text-[14px]">translate</span> คำแปล &amp; ความรู้สึกลึกซึ้ง
+                  </div>
+                  <p class="font-body-md text-body-md text-on-surface-variant font-normal">
+                    “รับกลับบ้านครับ ใส่ชื่อว่า Arlann ได้เลยครับ แล้วก็ขอทิชชู่เพิ่มอีกแผ่นได้ไหมครับ?”
+                  </p>
+                  <span class="text-xs text-outline italic">Tip: “Put it down under [Name]” แปลว่า
+                    ลงชื่อนี้ไว้ที่แก้วได้เลย</span>
+                </div>
+                <div class="flex items-center justify-between pt-1">
+                  <span
+                    class="font-label-sm text-label-sm text-outline group-hover:text-primary transition-colors flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">touch_app</span> Click bubble to reveal Thai
+                    meaning
+                  </span>
+                  <span
+                    class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Name
+                    &amp; Request</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4: Core Feature 3 — Essential Vocabulary & Flashcards -->
+      <section class="w-full py-16 px-6 lg:px-12 bg-surface-container-low" id="flashcards">
+        <div class="max-w-7xl mx-auto flex flex-col gap-10">
+          <!-- Section Header & Filter Chips -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div class="flex flex-col gap-2">
+              <div class="flex items-center gap-2">
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Core
+                  Matrix 03</span>
+                <span class="text-outline">/</span>
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Cognitive Flashcards</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg text-on-surface">Essential Vocabulary &amp; Nuance Cards</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+                การ์ดคำศัพท์ 3D Interactive พร้อมสัทศาสตร์ (Phonetics) และตัวอย่างประโยคบริบทจริง
+                คลิกที่ตัวการ์ดเพื่อพลิกดูความหมาย
+              </p>
+            </div>
+            <!-- Filter Chips by Topic -->
+            <div class="flex items-center gap-2 overflow-x-auto no-scrollbar touch-scroll sm:flex-wrap pb-1">
+              <button
+                class="vocab-filter active px-3.5 py-1.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="filterFlashcards('all')">All Topics</button>
+              <button
+                class="vocab-filter px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="filterFlashcards('feelings')">Daily Feelings</button>
+              <button
+                class="vocab-filter px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="filterFlashcards('routine')">Daily Routine</button>
+              <button
+                class="vocab-filter px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="filterFlashcards('travel')">Travel &amp; Commute</button>
+              <button
+                class="vocab-filter px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all whitespace-nowrap flex-shrink-0"
+                onclick="filterFlashcards('tech')">Workplace &amp; Tech</button>
+            </div>
+          </div>
+          <!-- Flashcards Grid (3D Flip Card Effect) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="flashcard-grid">
+            <!-- Flashcard 1: Serendipity -->
+            <div class="card-item relative h-80 rounded-2xl cursor-pointer group perspective-[1000px]"
+              data-topic="feelings" onclick="flipCard(this)">
+              <div
+                class="card-inner relative w-full h-full duration-500 [transform-style:preserve-3d] shadow-sm group-hover:shadow-md rounded-2xl">
+                <!-- Front -->
+                <div
+                  class="card-front absolute inset-0 w-full h-full [backface-visibility:hidden] rounded-2xl bg-surface-container-lowest p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed uppercase tracking-wider">Feelings
+                      / Noun</span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">sync</span>
+                  </div>
+                  <div class="flex flex-col gap-1 my-auto">
+                    <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Serendipity</h3>
+                    <span class="font-body-md text-body-md text-primary font-mono">/ˌser.ənˈdɪp.ə.ti/</span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-2">เรื่องบังเอิญที่นำพาความโชคดีมาให้</span>
+                  </div>
+                  <div class="flex items-center justify-between pt-3">
+                    <span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[14px]">touch_app</span> Tap to Flip
+                    </span>
+                    <button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface transition-colors"
+                      onclick="event.stopPropagation(); speakText('Serendipity')">
+                      <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Back -->
+                <div
+                  class="card-back absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl bg-inverse-surface text-inverse-on-surface p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Deep Nuance
+                      &amp; Collocation</span>
+                    <span class="material-symbols-outlined text-primary-fixed text-[18px]">auto_awesome</span>
+                  </div>
+                  <div class="flex flex-col gap-2 my-auto">
+                    <p class="font-body-sm text-body-sm text-inverse-on-surface">
+                      <strong class="text-primary-fixed">Collocation:</strong> Pure serendipity, a stroke of serendipity
+                    </p>
+                    <div class="p-3 rounded-lg bg-surface-container-lowest/10">
+                      <span class="font-label-sm text-label-sm text-outline-variant block mb-1">In Real
+                        Conversation:</span>
+                      <p class="font-body-sm text-body-sm italic text-surface-container-lowest">
+                        “Meeting you at that quiet bookstore was pure serendipity.”
+                      </p>
+                      <p class="text-xs text-outline-variant mt-1">การได้เจอเธอที่ร้านหนังสือวันนั้น
+                        มันช่างเป็นเรื่องบังเอิญที่แสนวิเศษ</p>
+                    </div>
+                  </div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Tap anywhere to flip back</div>
+                </div>
+              </div>
+            </div>
+            <!-- Flashcard 2: Articulate -->
+            <div class="card-item relative h-80 rounded-2xl cursor-pointer group perspective-[1000px]" data-topic="tech"
+              onclick="flipCard(this)">
+              <div
+                class="card-inner relative w-full h-full duration-500 [transform-style:preserve-3d] shadow-sm group-hover:shadow-md rounded-2xl">
+                <!-- Front -->
+                <div
+                  class="card-front absolute inset-0 w-full h-full [backface-visibility:hidden] rounded-2xl bg-surface-container-lowest p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant uppercase tracking-wider">Workplace
+                      / Adj.</span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">sync</span>
+                  </div>
+                  <div class="flex flex-col gap-1 my-auto">
+                    <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Articulate</h3>
+                    <span class="font-body-md text-body-md text-primary font-mono">/ɑːˈtɪk.jə.lət/</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant mt-2">อธิบายความคิดได้ชัดเจน คมคาย
+                      และลื่นไหล</span>
+                  </div>
+                  <div class="flex items-center justify-between pt-3">
+                    <span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[14px]">touch_app</span> Tap to Flip
+                    </span>
+                    <button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface transition-colors"
+                      onclick="event.stopPropagation(); speakText('Articulate')">
+                      <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Back -->
+                <div
+                  class="card-back absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl bg-inverse-surface text-inverse-on-surface p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Deep Nuance
+                      &amp; Collocation</span>
+                    <span class="material-symbols-outlined text-primary-fixed text-[18px]">auto_awesome</span>
+                  </div>
+                  <div class="flex flex-col gap-2 my-auto">
+                    <p class="font-body-sm text-body-sm text-inverse-on-surface">
+                      <strong class="text-primary-fixed">Collocation:</strong> Highly articulate speaker, articulate
+                      vision
+                    </p>
+                    <div class="p-3 rounded-lg bg-surface-container-lowest/10">
+                      <span class="font-label-sm text-label-sm text-outline-variant block mb-1">In Real
+                        Conversation:</span>
+                      <p class="font-body-sm text-body-sm italic text-surface-container-lowest">
+                        “She gave an articulate summary of the engineering architecture.”
+                      </p>
+                      <p class="text-xs text-outline-variant mt-1">
+                        เธอสรุปภาพรวมของสถาปัตยกรรมระบบได้อย่างชัดเจนและเข้าใจง่ายมาก</p>
+                    </div>
+                  </div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Tap anywhere to flip back</div>
+                </div>
+              </div>
+            </div>
+            <!-- Flashcard 3: Proactive -->
+            <div class="card-item relative h-80 rounded-2xl cursor-pointer group perspective-[1000px]" data-topic="tech"
+              onclick="flipCard(this)">
+              <div
+                class="card-inner relative w-full h-full duration-500 [transform-style:preserve-3d] shadow-sm group-hover:shadow-md rounded-2xl">
+                <!-- Front -->
+                <div
+                  class="card-front absolute inset-0 w-full h-full [backface-visibility:hidden] rounded-2xl bg-surface-container-lowest p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant uppercase tracking-wider">Tech
+                      &amp; Team / Adj.</span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">sync</span>
+                  </div>
+                  <div class="flex flex-col gap-1 my-auto">
+                    <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Proactive</h3>
+                    <span class="font-body-md text-body-md text-primary font-mono">/proʊˈæk.tɪv/</span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-2">กระตือรือร้นในการลงมือทำก่อนเกิดปัญหา</span>
+                  </div>
+                  <div class="flex items-center justify-between pt-3">
+                    <span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[14px]">touch_app</span> Tap to Flip
+                    </span>
+                    <button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface transition-colors"
+                      onclick="event.stopPropagation(); speakText('Proactive')">
+                      <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Back -->
+                <div
+                  class="card-back absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl bg-inverse-surface text-inverse-on-surface p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Deep Nuance
+                      &amp; Collocation</span>
+                    <span class="material-symbols-outlined text-primary-fixed text-[18px]">auto_awesome</span>
+                  </div>
+                  <div class="flex flex-col gap-2 my-auto">
+                    <p class="font-body-sm text-body-sm text-inverse-on-surface">
+                      <strong class="text-primary-fixed">Collocation:</strong> Proactive approach, take proactive steps
+                    </p>
+                    <div class="p-3 rounded-lg bg-surface-container-lowest/10">
+                      <span class="font-label-sm text-label-sm text-outline-variant block mb-1">In Real
+                        Conversation:</span>
+                      <p class="font-body-sm text-body-sm italic text-surface-container-lowest">
+                        “Thanks for being proactive and flagging the edge case early!”
+                      </p>
+                      <p class="text-xs text-outline-variant mt-1">ขอบคุณที่สังเกตเห็นและเตือนเคสนี้ล่วงหน้านะ
+                        ช่วยชีวิตทีมไว้เลย</p>
+                    </div>
+                  </div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Tap anywhere to flip back</div>
+                </div>
+              </div>
+            </div>
+            <!-- Flashcard 4: Unwind -->
+            <div class="card-item relative h-80 rounded-2xl cursor-pointer group perspective-[1000px]"
+              data-topic="routine" onclick="flipCard(this)">
+              <div
+                class="card-inner relative w-full h-full duration-500 [transform-style:preserve-3d] shadow-sm group-hover:shadow-md rounded-2xl">
+                <!-- Front -->
+                <div
+                  class="card-front absolute inset-0 w-full h-full [backface-visibility:hidden] rounded-2xl bg-surface-container-lowest p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed uppercase tracking-wider">Routine
+                      / Verb</span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">sync</span>
+                  </div>
+                  <div class="flex flex-col gap-1 my-auto">
+                    <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Unwind</h3>
+                    <span class="font-body-md text-body-md text-primary font-mono">/ʌnˈwaɪnd/</span>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant mt-2">ผ่อนคลาย
+                      คลายความเหนื่อยล้าหลังวันยาวนาน</span>
+                  </div>
+                  <div class="flex items-center justify-between pt-3">
+                    <span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[14px]">touch_app</span> Tap to Flip
+                    </span>
+                    <button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface transition-colors"
+                      onclick="event.stopPropagation(); speakText('Unwind')">
+                      <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Back -->
+                <div
+                  class="card-back absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl bg-inverse-surface text-inverse-on-surface p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Deep Nuance
+                      &amp; Collocation</span>
+                    <span class="material-symbols-outlined text-primary-fixed text-[18px]">auto_awesome</span>
+                  </div>
+                  <div class="flex flex-col gap-2 my-auto">
+                    <p class="font-body-sm text-body-sm text-inverse-on-surface">
+                      <strong class="text-primary-fixed">Collocation:</strong> Unwind with a book, need time to unwind
+                    </p>
+                    <div class="p-3 rounded-lg bg-surface-container-lowest/10">
+                      <span class="font-label-sm text-label-sm text-outline-variant block mb-1">In Real
+                        Conversation:</span>
+                      <p class="font-body-sm text-body-sm italic text-surface-container-lowest">
+                        “I usually unwind by listening to jazz and brewing chamomile tea.”
+                      </p>
+                      <p class="text-xs text-outline-variant mt-1">
+                        ปกติผมมักจะผ่อนคลายด้วยการเปิดเพลงแจ๊สคลอและชงชาคาโมมายล์</p>
+                    </div>
+                  </div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Tap anywhere to flip back</div>
+                </div>
+              </div>
+            </div>
+            <!-- Flashcard 5: Wanderlust -->
+            <div class="card-item relative h-80 rounded-2xl cursor-pointer group perspective-[1000px]"
+              data-topic="travel" onclick="flipCard(this)">
+              <div
+                class="card-inner relative w-full h-full duration-500 [transform-style:preserve-3d] shadow-sm group-hover:shadow-md rounded-2xl">
+                <!-- Front -->
+                <div
+                  class="card-front absolute inset-0 w-full h-full [backface-visibility:hidden] rounded-2xl bg-surface-container-lowest p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant uppercase tracking-wider">Travel
+                      / Noun</span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">sync</span>
+                  </div>
+                  <div class="flex flex-col gap-1 my-auto">
+                    <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Wanderlust</h3>
+                    <span class="font-body-md text-body-md text-primary font-mono">/ˈwɒn.də.lʌst/</span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-2">ความปรารถนาอย่างแรงกล้าที่จะออกเดินทางท่องเที่ยว</span>
+                  </div>
+                  <div class="flex items-center justify-between pt-3">
+                    <span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[14px]">touch_app</span> Tap to Flip
+                    </span>
+                    <button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface transition-colors"
+                      onclick="event.stopPropagation(); speakText('Wanderlust')">
+                      <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Back -->
+                <div
+                  class="card-back absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl bg-inverse-surface text-inverse-on-surface p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Deep Nuance
+                      &amp; Collocation</span>
+                    <span class="material-symbols-outlined text-primary-fixed text-[18px]">auto_awesome</span>
+                  </div>
+                  <div class="flex flex-col gap-2 my-auto">
+                    <p class="font-body-sm text-body-sm text-inverse-on-surface">
+                      <strong class="text-primary-fixed">Collocation:</strong> Fuel one's wanderlust, incurable
+                      wanderlust
+                    </p>
+                    <div class="p-3 rounded-lg bg-surface-container-lowest/10">
+                      <span class="font-label-sm text-label-sm text-outline-variant block mb-1">In Real
+                        Conversation:</span>
+                      <p class="font-body-sm text-body-sm italic text-surface-container-lowest">
+                        “Looking at those Kyoto photos just fuels my wanderlust.”
+                      </p>
+                      <p class="text-xs text-outline-variant mt-1">พอย้อนดูรูปเมืองเกียวโตแล้ว
+                        มันจุดประกายให้อยากแพ็คกระเป๋าเดินทางอีกแล้ว</p>
+                    </div>
+                  </div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Tap anywhere to flip back</div>
+                </div>
+              </div>
+            </div>
+            <!-- Flashcard 6: Empathetic -->
+            <div class="card-item relative h-80 rounded-2xl cursor-pointer group perspective-[1000px]"
+              data-topic="feelings" onclick="flipCard(this)">
+              <div
+                class="card-inner relative w-full h-full duration-500 [transform-style:preserve-3d] shadow-sm group-hover:shadow-md rounded-2xl">
+                <!-- Front -->
+                <div
+                  class="card-front absolute inset-0 w-full h-full [backface-visibility:hidden] rounded-2xl bg-surface-container-lowest p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span
+                      class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed uppercase tracking-wider">Feelings
+                      / Adj.</span>
+                    <span
+                      class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">sync</span>
+                  </div>
+                  <div class="flex flex-col gap-1 my-auto">
+                    <h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">Empathetic</h3>
+                    <span class="font-body-md text-body-md text-primary font-mono">/ˌem.pəˈθet̬.ɪk/</span>
+                    <span
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-2">เข้าอกเข้าใจความรู้สึกของคนอื่นอย่างลึกซึ้ง</span>
+                  </div>
+                  <div class="flex items-center justify-between pt-3">
+                    <span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+                      <span class="material-symbols-outlined text-[14px]">touch_app</span> Tap to Flip
+                    </span>
+                    <button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface transition-colors"
+                      onclick="event.stopPropagation(); speakText('Empathetic')">
+                      <span class="material-symbols-outlined text-[18px]">volume_up</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- Back -->
+                <div
+                  class="card-back absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] rounded-2xl bg-inverse-surface text-inverse-on-surface p-7 flex flex-col justify-between">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Deep Nuance
+                      &amp; Collocation</span>
+                    <span class="material-symbols-outlined text-primary-fixed text-[18px]">auto_awesome</span>
+                  </div>
+                  <div class="flex flex-col gap-2 my-auto">
+                    <p class="font-body-sm text-body-sm text-inverse-on-surface">
+                      <strong class="text-primary-fixed">Collocation:</strong> Empathetic listener, empathetic response
+                    </p>
+                    <div class="p-3 rounded-lg bg-surface-container-lowest/10">
+                      <span class="font-label-sm text-label-sm text-outline-variant block mb-1">In Real
+                        Conversation:</span>
+                      <p class="font-body-sm text-body-sm italic text-surface-container-lowest">
+                        “Thank you for being such an empathetic listener while I was stressed.”
+                      </p>
+                      <p class="text-xs text-outline-variant mt-1">ขอบคุณมากๆ
+                        ที่รับฟังและเข้าใจความรู้สึกเราตอนที่กำลังเครียดนะ</p>
+                    </div>
+                  </div>
+                  <div class="font-label-sm text-label-sm text-outline-variant">Tap anywhere to flip back</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 5: Bilingual Pedagogical Annotation Block -->
+      <section class="w-full py-16 px-6 lg:px-12 max-w-7xl mx-auto">
+        <div
+          class="rounded-2xl bg-surface-container-low p-8 lg:p-12 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
+          <div class="flex flex-col gap-4 max-w-2xl">
+            <div class="flex items-center gap-2">
+              <span
+                class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-semibold">Self-Paced
+                Pedagogy</span>
+              <span class="font-label-sm text-label-sm text-outline">/ Daily Habit</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-on-surface">
+              “Language is not a test to pass, but a bridge to connect.”
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              ฝึกวันละ 5 นาที ลองพูดออกเสียงประโยคเหล่านี้กับตัวเองหน้ากระจก หรือทักทายเพื่อนร่วมงานด้วยประโยคใหม่ๆ
+              ความเป็นธรรมชาติจะค่อยๆ กลายเป็นสัญชาตญาณของคุณเอง
+            </p>
+            <div class="flex items-center gap-4 pt-2">
+              <a class="px-5 py-2.5 rounded-lg bg-inverse-surface text-inverse-on-surface hover:bg-on-surface font-label-md text-label-md transition-colors flex items-center gap-2 shadow-sm"
+                data-path="about-portfolio" href="about.html">
+                <span>Read Pedagogy Principles</span>
+                <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </a>
+              <a class="px-5 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors"
+                href="#tenses-navigator">
+                Back to Top Matrix
+              </a>
+            </div>
+          </div>
+          <!-- Small Illustrated SVG Stamp (Clean, minimal, <2kb) -->
+          <div
+            class="flex-shrink-0 flex items-center justify-center p-6 rounded-2xl bg-surface-container-lowest shadow-sm">
+            <svg class="w-32 h-32 text-primary" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="opacity-40 animate-spin" cx="50" cy="50" r="46" stroke="currentColor"
+                stroke-dasharray="4 4" stroke-width="2" style="animation-duration: 40s;"></circle>
+              <path d="M30 65C30 52 40 42 52 42C64 42 74 52 74 65" stroke="currentColor" stroke-linecap="round"
+                stroke-width="2.5"></path>
+              <circle cx="52" cy="30" fill="currentColor" r="8"></circle>
+              <path d="M42 70H62" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+              <circle cx="70" cy="28" fill="#38bdf8" r="3"></circle>
+              <circle cx="28" cy="34" fill="#38bdf8" r="2.5"></circle>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Client-side Interactive Engine -->
+  </main>
+  <footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_8px_rgba(11,28,48,0.03)]">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12">
+        <div class="md:col-span-5 flex flex-col gap-3">
+          <div class="flex items-center gap-3"><span
+              class="font-headline-sm text-headline-sm text-on-surface">Arlann</span><span
+              class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant uppercase tracking-wider">Essays
+              &amp; Pedagogy</span></div>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Written with craft and clarity.
+            Exploring the intersection of language, systemic engineering, and literary philosophy.</p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant italic mt-1">“Arlann — Written with craft and
+            clarity.”</p>
+        </div>
+        <div class="md:col-span-3 flex flex-col gap-3"><span
+            class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Dispatches &amp;
+            Essays</span>
+          <div class="flex flex-col gap-2"><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://substack.com" rel="noreferrer" target="_blank">Substack Dispatches</a><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://github.com" rel="noreferrer" target="_blank">GitHub Engineering</a><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://x.com" rel="noreferrer" target="_blank">Notes on X / Twitter</a><a
+              class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"
+              href="https://linkedin.com" rel="noreferrer" target="_blank">LinkedIn Pedagogy</a></div>
+        </div>
+        <div class="md:col-span-4 flex flex-col gap-3"><span
+            class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold">Literary Studio
+            Brief</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">Receive monthly essays, linguistic
+            deconstructions, and pedagogical materials directly in your inbox.</p>
+          <form class="flex items-stretch gap-2 mt-1"><input
+              class="w-full px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container"
+              placeholder="reader@domain.com" type="email" /><button
+              class="px-4 py-2 rounded-lg bg-inverse-surface text-inverse-on-surface font-label-md text-label-md hover:bg-on-surface transition-colors flex-shrink-0"
+              type="button">Subscribe</button></form>
+        </div>
+      </div>
+      <div
+        class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant">
+        <p>© 2025 Arlann. All rights reserved. Intellectual sanctuary for readers.</p>
+        <div class="flex items-center gap-6 font-label-sm text-label-sm"><a
+            class="hover:text-on-surface transition-colors" href="#">Colophon</a><a
+            class="hover:text-on-surface transition-colors" href="#">Pedagogy Principles</a><a
+            class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/english-studio.js" defer></script>
+</body>
+
+</html>

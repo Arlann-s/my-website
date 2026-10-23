@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "ทำไมการเขียนอธิบายให้คนอื่นเข้าใจ ถึงเป็นทักษะการเรียนรู้ที่ทรงพลังที่สุด (The Feynman Technique in Practice)",
+    "category": "Deep Dive",
+    "date": "",
+    "readTime": "8 min read",
+    "isFeatured": true,
+    "description": "สำรวจกระบวนการย่อยความรู้เชิงลึกให้กระชับ ชัดเจน และนำไปประยุกต์ใช้ได้ทันที พร้อมตัวอย่างและ Framework การจดบันทึกที่เปลี่ยนนามธรรมที่ซับซ้อน ให้กลายเป็นสัญชาตญาณทางความคิด"
+  },
+  {
+    "id": 2,
+    "title": "สถาปัตยกรรม CSS ยุคใหม่: เมื่อ Tailwind และ Design Tokens ทำงานร่วมกัน",
+    "category": "Tech &amp; Tools",
+    "date": "Nov 14, 2024",
+    "readTime": "6 min read",
+    "isFeatured": false,
+    "description": "เจาะลึกการวางระบบดีไซน์ให้ขยายตัวได้อย่างสง่างาม ข้ามสะพานเชื่อมระหว่างดีไซเนอร์และโปรแกรมเมอร์ด้วย Single Source of Truth และ Token Automation"
+  },
+  {
+    "id": 3,
+    "title": "ทบทวนปีที่ผ่านมาผ่าน 5 คำถามที่ซื่อสัตย์กับตัวเอง",
+    "category": "Life Reflections",
+    "date": "Dec 28, 2024",
+    "readTime": "10 min read",
+    "isFeatured": false,
+    "description": "การสำรวจความล้มเหลว ความเงียบสงบในใจ และสิ่งที่เราเลือกสละทิ้งเพื่อสร้างพื้นที่ให้สิ่งที่สำคัญอย่างแท้จริง ผ่านแบบสอบถามอัตวิสัยส่วนบุคคล"
+  },
+  {
+    "id": 4,
+    "title": "Building a Second Brain สรุปแนวคิดการจัดระเบียบข้อมูลสำหรับคนทำงานสร้างสรรค์",
+    "category": "Books &amp; Learning",
+    "date": "Jan 18, 2025",
+    "readTime": "12 min read",
+    "isFeatured": false,
+    "description": "ถอดรหัสโมเดล CODE (Capture, Organize, Distill, Express) และหลักการ PARA เพื่อเปลี่ยนการบริโภคคอนเทนต์ให้กลายเป็นคลังอาวุธทางปัญญาที่ไม่รู้จบ"
+  },
+  {
+    "id": 5,
+    "title": "นิสัยจิ๋วที่เปลี่ยนประสิทธิภาพการทำงานได้จริง (Micro-habits in Engineering)",
+    "category": "Productivity &amp; Habits",
+    "date": "Feb 02, 2025",
+    "readTime": "7 min read",
+    "isFeatured": false,
+    "description": "เพราะความสำเร็จไม่ใช่การเร่งเครื่องสุดแรง แต่คือการลด friction ในกิจวัตรเล็กๆ: กฎ 2 นาที, การทำ clean slate ยามเย็น, และ friction-free commit notes"
+  }
+]

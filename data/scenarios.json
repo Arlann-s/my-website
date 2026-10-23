@@ -1,0 +1,142 @@
+{
+  "cafe": {
+    "sceneBadge": "Setting: Specialty Coffee Bar",
+    "sceneTitle": "Ordering Coffee & Custom Requests",
+    "proTip": "ในร้านกาแฟต่างประเทศ การใช้ \"Can I get...\" ฟังดูเป็นธรรมชาติและสุภาพมาก ไม่จำเป็นต้องใช้ \"I want...\" ซึ่งอาจฟังดูแข็งไป",
+    "tone": "Warm & Natural Casual",
+    "dialogues": [
+      {
+        "speakerRole": "You",
+        "speakerName": "Customer (You)",
+        "isYou": true,
+        "en": "“Hi there! Can I get an iced oat latte with half-sweet, please?”",
+        "th": "“สวัสดีครับ/ค่ะ ขอกาแฟโอ๊ตลาเต้เย็น หวานน้อย (หวานครึ่งเดียว) แก้วนึงครับ/ค่ะ”",
+        "tip": "Tip: “half-sweet” เข้าใจตรงกันทันที ดีกว่าพูดว่า “sweet 50%”",
+        "badge": "Polite Request"
+      },
+      {
+        "speakerRole": "Barista",
+        "speakerName": "Barista",
+        "isYou": false,
+        "en": "“Sure thing! For here or to go? And what name can I put on that?”",
+        "th": "“ได้เลยครับ! ทานที่นี่หรือรับกลับบ้านดีครับ? แล้วแก้วนี้เขียนชื่อคุณอะไรดีครับ?”",
+        "tip": "Tip: “Sure thing!” เป็นคำตอบรับที่กระตือรือร้นและเป็นมิตรกว่า “Yes” ทั่วไป",
+        "badge": "Common Follow-up"
+      },
+      {
+        "speakerRole": "You",
+        "speakerName": "Customer (You)",
+        "isYou": true,
+        "en": "“To go, please. Put it down under Arlann. Also, could I grab an extra napkin?”",
+        "th": "“รับกลับบ้านครับ ใส่ชื่อว่า Arlann ได้เลยครับ แล้วก็ขอทิชชู่เพิ่มอีกแผ่นได้ไหมครับ?”",
+        "tip": "Tip: “Put it down under [Name]” แปลว่า ลงชื่อนี้ไว้ที่แก้วได้เลย",
+        "badge": "Name & Request"
+      }
+    ]
+  },
+  "smalltalk": {
+    "sceneBadge": "Setting: Weekend Co-working / Garden",
+    "sceneTitle": "Breaking the Ice Naturally",
+    "proTip": "อย่าถามเรื่องส่วนตัวเกินไป (เงินเดือน, อายุ) ให้เริ่มจากบรรยากาศ, หนังสือที่อ่าน, หรือเครื่องดื่ม เพื่อสร้างความผ่อนคลาย",
+    "tone": "Friendly & Unhurried",
+    "dialogues": [
+      {
+        "speakerRole": "You",
+        "speakerName": "You",
+        "isYou": true,
+        "en": "“Mind if I sit here? Looks like the place is pretty packed today.”",
+        "th": "“ขอนั่งตรงนี้ได้ไหมครับ? ดูเหมือนวันนี้คนจะแน่นร้านทีเดียว”",
+        "tip": "Tip: “Mind if I...” เป็นการขออนุญาตที่สุภาพและเป็นกันเอง",
+        "badge": "Ice Breaker"
+      },
+      {
+        "speakerRole": "Friend",
+        "speakerName": "Local Reader",
+        "isYou": false,
+        "en": "“Not at all, go ahead! What are you reading there? The cover looks intriguing.”",
+        "th": "“ได้เลยครับ ตามสบายเลย! กำลังอ่านเล่มไหนอยู่เหรอครับ? หน้าปกดูน่าสนใจมาก”",
+        "tip": "Tip: “Not at all” แปลว่า ไม่รังเกียจเลย นั่งได้ตามสบาย",
+        "badge": "Open Answer"
+      },
+      {
+        "speakerRole": "You",
+        "speakerName": "You",
+        "isYou": true,
+        "en": "“It’s an essay on cognitive linguistics. Heavy title, but surprisingly engaging!”",
+        "th": "“เป็นรวมบทความเกี่ยวกับภาษาศาสตร์เชิงปัญญาครับ ชื่อดูยาก แต่เนื้อหาเพลินเกินคาดเลย!”",
+        "tip": "Tip: “surprisingly engaging” แปลว่า น่าติดตามกว่าที่คิดไว้",
+        "badge": "Shared Interest"
+      }
+    ]
+  },
+  "travel": {
+    "sceneBadge": "Setting: International Airport & Transit",
+    "sceneTitle": "Airport, Checking in, & Directions",
+    "proTip": "หากฟังเจ้าหน้าที่ไม่ทัน ให้พูดว่า \"Sorry, could you repeat that a bit slower?\" ดีกว่ายิ้มแห้งๆ แล้วพยักหน้า",
+    "tone": "Clear & Practical",
+    "dialogues": [
+      {
+        "speakerRole": "You",
+        "speakerName": "Traveler (You)",
+        "isYou": true,
+        "en": "“Excuse me, could you point me toward baggage claim carousel four?”",
+        "th": "“ขอโทษนะครับ พอจะช่วยชี้ทางไปสายพานรับกระเป๋าหมายเลข 4 ได้ไหมครับ?”",
+        "tip": "Tip: “point me toward...” ชี้ทิศทางให้หน่อย ฟังดูเป็นธรรมชาติมาก",
+        "badge": "Directions"
+      },
+      {
+        "speakerRole": "Officer",
+        "speakerName": "Airport Staff",
+        "isYou": false,
+        "en": "“Head straight past the duty-free shops, take the escalator down, and it will be on your left.”",
+        "th": "“เดินตรงผ่านร้านดิวตี้ฟรีไปเลยครับ ลงบันไดเลื่อน แล้วจะอยู่ทางซ้ายมือครับ”",
+        "tip": "Tip: “take the escalator down” คือการลงบันไดเลื่อน",
+        "badge": "Guidance"
+      },
+      {
+        "speakerRole": "You",
+        "speakerName": "Traveler (You)",
+        "isYou": true,
+        "en": "“Appreciate your help! Have a great day ahead.”",
+        "th": "“ขอบคุณมากสำหรับความช่วยเหลือครับ ขอให้เป็นวันที่ดีนะครับ”",
+        "tip": "Tip: “Appreciate your help!” สั้น กระชับ อบอุ่นกว่า Thank you ปกติ",
+        "badge": "Courteous Sign-off"
+      }
+    ]
+  },
+  "empathy": {
+    "sceneBadge": "Setting: Quiet Coffee Chat / Messaging",
+    "sceneTitle": "Empathy & Checking in on Friends",
+    "proTip": "เมื่อเพื่อนเจอเรื่องยากลำบาก คำว่า \"How are you holding up?\" แสดงความใส่ใจได้ลึกซึ้งกว่า \"How are you?\" ทั่วไปมาก",
+    "tone": "Gentle & Supportive",
+    "dialogues": [
+      {
+        "speakerRole": "You",
+        "speakerName": "You",
+        "isYou": true,
+        "en": "“Hey, I know things have been overwhelming lately. How are you holding up?”",
+        "th": "“เธอ ช่วงนี้รู้เลยว่าเรื่องต่างๆ คงหนักหนามาก เป็นยังไงบ้าง ไหวไหม?”",
+        "tip": "Tip: “How are you holding up?” สื่อถึงการถามไถ่ว่า รับมือกับความกดดันไหวไหม",
+        "badge": "Empathetic Check-in"
+      },
+      {
+        "speakerRole": "Friend",
+        "speakerName": "Close Friend",
+        "isYou": false,
+        "en": "“Honestly? A bit burned out, but talking to you genuinely helps. Thanks for checking in.”",
+        "th": "“บอกตรงๆ นะ แอบหมดไฟไปนิดนึง แต่พอได้คุยกับเธอก็รู้สึกดีขึ้นจริงๆ ขอบคุณที่ทักมาถามไถ่นะ”",
+        "tip": "Tip: “Thanks for checking in” คือคำขอบคุณเมื่อมีคนทักมาถามไถ่สารทุกข์สุกดิบ",
+        "badge": "Heartfelt Reply"
+      },
+      {
+        "speakerRole": "You",
+        "speakerName": "You",
+        "isYou": true,
+        "en": "“No need to rush any answers. Whenever you need a sounding board, I’m right here.”",
+        "th": "“ไม่ต้องรีบตอบอะไรทั้งนั้นนะ เมื่อไหร่ที่อยากได้คนรับฟัง เราพร้อมอยู่ตรงนี้เสมอ”",
+        "tip": "Tip: “sounding board” หมายถึง คนที่คอยรับฟังและช่วยสะท้อนความคิดอย่างปลอดภัย",
+        "badge": "Unconditional Support"
+      }
+    ]
+  }
+}
