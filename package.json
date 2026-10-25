@@ -1,14 +1,14 @@
 {
   "name": "personal-website-starter",
   "version": "1.1.0",
-  "description": "Personal static website with portfolio, blog, curated shop, English Studio and Weather Intelligence.",
+  "description": "Personal static website with portfolio, blog, and curated shop.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
     "serve": "node server.js"
   },
-  "keywords": ["portfolio", "blog", "weather", "english-studio", "personal-website"],
-  "author": "Your Name",
+  "keywords": ["portfolio", "blog", "curated-shop", "personal-website"],
+  "author": "Arlann",
   "license": "MIT"
 }
